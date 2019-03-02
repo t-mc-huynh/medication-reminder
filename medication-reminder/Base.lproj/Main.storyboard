@@ -309,7 +309,7 @@ or product </string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
-                                                <action selector="infoButton:" destination="9x7-6w-ZXZ" eventType="touchUpInside" id="L89-Qy-IUw"/>
+                                                <segue destination="tgn-Wz-V3l" kind="show" id="tVV-Cn-cw1"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -329,19 +329,18 @@ or product </string>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ew-zJ-kl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="9x7-6w-ZXZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="816.79999999999995" y="211.84407796101951"/>
         </scene>
         <!--InfoPage-->
         <scene sceneID="pN8-c6-kQe">
             <objects>
-                <viewController title="InfoPage" id="tgn-Wz-V3l" sceneMemberID="viewController">
+                <viewController title="InfoPage" id="tgn-Wz-V3l" customClass="ViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bH6-SO-UIW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-Dk-PG2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-Dk-PG2">
                                 <rect key="frame" x="325" y="20" width="34" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="back">
@@ -351,15 +350,26 @@ or product </string>
                                     <segue destination="q3T-iT-5m8" kind="show" id="gs2-Ps-PZW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-KK-oJ7">
-                                <rect key="frame" x="16" y="64" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medication Name" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-KK-oJ7">
+                                <rect key="frame" x="16" y="64" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="SDQ-GI-lOx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-jk-a2C">
-                                <rect key="frame" x="16" y="93" width="343" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warnings...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-jk-a2C">
+                                <rect key="frame" x="16" y="99" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Medication Name" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJs-XX-zp9">
+                                <rect key="frame" x="16" y="282" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="BcX-HL-EqW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -367,9 +377,15 @@ or product </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="r6f-Ob-nNV" firstAttribute="trailing" secondItem="GaG-jk-a2C" secondAttribute="trailing" constant="16" id="CpS-Cb-Hsa"/>
+                            <constraint firstItem="GaG-jk-a2C" firstAttribute="top" secondItem="Paa-KK-oJ7" secondAttribute="bottom" constant="10" id="D3x-bp-hmh"/>
                             <constraint firstItem="Paa-KK-oJ7" firstAttribute="leading" secondItem="r6f-Ob-nNV" secondAttribute="leading" constant="16" id="FtU-56-ZRA"/>
+                            <constraint firstItem="hwz-Dk-PG2" firstAttribute="leading" secondItem="r6f-Ob-nNV" secondAttribute="leading" constant="325" id="HLs-aj-g1U"/>
+                            <constraint firstItem="GaG-jk-a2C" firstAttribute="leading" secondItem="r6f-Ob-nNV" secondAttribute="leading" constant="16" id="OwS-cK-IWB"/>
                             <constraint firstItem="r6f-Ob-nNV" firstAttribute="trailing" secondItem="Paa-KK-oJ7" secondAttribute="trailing" constant="16" id="QM6-wb-75c"/>
+                            <constraint firstItem="hwz-Dk-PG2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Paa-KK-oJ7" secondAttribute="trailing" id="nCh-CA-zRl"/>
                             <constraint firstItem="Paa-KK-oJ7" firstAttribute="top" secondItem="hwz-Dk-PG2" secondAttribute="bottom" constant="14" id="sHh-Pc-hZL"/>
+                            <constraint firstItem="hwz-Dk-PG2" firstAttribute="top" secondItem="r6f-Ob-nNV" secondAttribute="top" id="yMo-yM-mLm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r6f-Ob-nNV"/>
                     </view>
