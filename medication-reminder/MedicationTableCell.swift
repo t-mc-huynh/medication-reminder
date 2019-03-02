@@ -23,12 +23,24 @@ class MedicationTableCell {
     var frequency: Int
     var dose: Float
     var doseForm: String
+    var warnings: [String]
     
-    
-    public init(name: String, nickname: String, scheduleType: ScheduleType) {
+    public init(name: String, nickname: String, scheduleType: ScheduleType, frequency: Int, dose: Float, doseForm: String, warnings: [String]) {
         self.name = name
         self.nickname = nickname
         self.scheduleType = scheduleType
-        self.frequency =
+        self.frequency = frequency
+        self.dose = dose
+        self.doseForm = doseForm
+        self.warnings = warnings
     }
 }
+
+extension MedicationTableCell {
+    public class func getMockData() -> [MedicationTableCell] {
+        return [
+            
+        ]
+    }
+}
+
