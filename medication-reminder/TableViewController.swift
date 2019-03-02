@@ -30,17 +30,26 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-    //    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-    //
-    //
-    //        return nil
-    //    }
+//  checkmark swipe
+    
+//    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
+//            completion(true)
+//        }
+//
+//        action.image = #imageLiteral(resourceName: "check")
+//        action.backgroundColor = .green
+//
+//
+//        return UISwipeActionsConfiguration(actions: [action])
+//    }
     
     override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as UITableViewCell
-        cell.tintColor = UIColor.red 
+        cell.tintColor = UIColor.red
         
         cell.accessoryType = .checkmark
+        
         //return cell
     }
 
