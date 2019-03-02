@@ -12,6 +12,8 @@
 		17F82FF2222A3D0000F44244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF0222A3D0000F44244 /* Main.storyboard */; };
 		17F82FF4222A3D0300F44244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF3222A3D0300F44244 /* Assets.xcassets */; };
 		17F82FF7222A3D0300F44244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */; };
+		EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */; };
+		EBCF9E15222AAA71006DBFF0 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E14222AAA71006DBFF0 /* Medication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		17F82FF3222A3D0300F44244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F82FF6222A3D0300F44244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17F82FF8222A3D0300F44244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableCell.swift; sourceTree = "<group>"; };
+		EBCF9E14222AAA71006DBFF0 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
 				17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */,
 				17F82FF8222A3D0300F44244 /* Info.plist */,
+				EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */,
+				EBCF9E14222AAA71006DBFF0 /* Medication.swift */,
 			);
 			path = "medication-reminder";
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCF9E15222AAA71006DBFF0 /* Medication.swift in Sources */,
 				17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */,
+				EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */,
 				17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
