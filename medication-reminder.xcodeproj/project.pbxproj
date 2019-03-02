@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1768E34D222AD66500979362 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768E34C222AD66500979362 /* TableViewController.swift */; };
 		17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEC222A3D0000F44244 /* AppDelegate.swift */; };
 		17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEE222A3D0000F44244 /* ViewController.swift */; };
 		17F82FF2222A3D0000F44244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF0222A3D0000F44244 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1768E34C222AD66500979362 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		17F82FE9222A3D0000F44244 /* medication-reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medication-reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F82FEC222A3D0000F44244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F82FEE222A3D0000F44244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				17F82FEC222A3D0000F44244 /* AppDelegate.swift */,
 				17F82FEE222A3D0000F44244 /* ViewController.swift */,
+				1768E34C222AD66500979362 /* TableViewController.swift */,
 				17F82FF0222A3D0000F44244 /* Main.storyboard */,
 				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
 				17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */,
 				EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */,
 				EBCF9E17222ACB3C006DBFF0 /* MockMedications.swift in Sources */,
+				1768E34D222AD66500979362 /* TableViewController.swift in Sources */,
 				17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
