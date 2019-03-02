@@ -10,42 +10,49 @@ import Foundation
 import UIKit
 
 class MedicationRecord {
-    var name: String
-    var doses: [Float]
-    var doseType: String
-    var doseForm: String
-    var warnings: [String]
-    var nickname: String
-    var scheduledTime: UIDatePicker
-    var frequency: Int
+    var name: String                // "Zopiclone (Imovane)"
+    var dose: Float                 // 7.5
+    var qty: Float                  // 1   --> as in "1" pill
+    var doseType: String            // "MG"
+    var doseForm: String            // "TAB"
+    var warnings: [String]          // ["Avoid taking with alcohol"]
+    var nickname: String            // "Z"
+    var scheduledTime: UIDatePicker // UIDatePicker
+    var frequency: Int              // 1   --> as in "every 1 day(s)"
+    var totalQty: Float             // 30  --< as in 30 pills for this Rx
+    var refills: Int                // 3
     
-    public init(name: String, doses: [Float], doseType: String, doseForm: String, warnings: [String], nickname: String, scheduledTime: UIDatePicker, frequency: Int) {
+    public init(name: String, dose: Float, qty: Float, doseType: String, doseForm: String, warnings: [String], nickname: String, scheduledTime: UIDatePicker, frequency: Int, totalQty: Float, refills: Int) {
         self.name = name
-        self.doses = doses
+        self.dose = dose
+        self.qty = qty
         self.doseType = doseType
         self.doseForm = doseForm
         self.warnings = warnings
         self.nickname = nickname
         self.scheduledTime = scheduledTime
         self.frequency = frequency
+        self.totalQty = totalQty
+        self.refills = refills
     }
     
     public func getName() -> String { return self.name }
-    public func getDoses() -> [Float] { return self.doses }
+    public func getDose() -> Float { return self.dose }
+    public func getQty() -> Float { return self.qty }
     public func getDoseType() -> String { return self.doseType }
     public func getDoseForm() -> String { return self.doseForm }
     public func getWarnings() -> [String] { return self.warnings }
     public func getNickname() -> String { return self.nickname }
     public func getScheduledTime() -> UIDatePicker { return self.scheduledTime }
     public func getFrequency() -> Int { return self.frequency }
+    public func getTotalQty() -> Float { return self.totalQty }
+    public func getRefills() -> Int { return self.refills }
     
-    public func setName(name: String) { self.name = name }
-    public func setDoses(doses: [Float]) { self.doses = doses }
-    public func setDoseType(doseType: String) { self.doseType = doseType }
-    public func setDoseForm(doseForm: String) { self.doseForm = doseForm }
+    public func setQty(qty: Float) { self.qty = qty }
     public func setWarnings(warnings: [String]) { self.warnings = warnings }
     public func setNickname(nickname: String) { self.nickname = nickname }
     public func setScheduledTime(scheduledTime: UIDatePicker) { self.scheduledTime = scheduledTime }
     public func setFrequency(frequency: Int) { self.frequency = frequency }
-    
+    public func setTotalQty(totalQty: Float) { self.totalQty = totalQty }
+    public func setRefills(refills: Int) { self.refills = refills }
 }

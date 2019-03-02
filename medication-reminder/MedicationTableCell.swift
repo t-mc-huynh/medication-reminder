@@ -28,12 +28,3 @@ class MedicationTableCell {
         self.warnings = warnings
     }
 }
-
-extension MedicationTableCell {
-    public class func getMockData() -> [MedicationTableCell] {
-        return [
-            
-        ]
-    }
-}
-
