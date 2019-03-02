@@ -7,28 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 class MedicationTableCell {
-    enum ScheduleType {
-        case MORNING
-        case NOON
-        case EVENING
-        case BEDTIME
-        case EXTRA
-    }
-    
     var name: String
     var nickname: String
-    var scheduleType: ScheduleType
+    var scheduledTime: UIDatePicker
     var frequency: Int
     var dose: Float
     var doseForm: String
     var warnings: [String]
     
-    public init(name: String, nickname: String, scheduleType: ScheduleType, frequency: Int, dose: Float, doseForm: String, warnings: [String]) {
+    public init(name: String, nickname: String, scheduledTime: UIDatePicker, frequency: Int, dose: Float, doseForm: String, warnings: [String]) {
         self.name = name
         self.nickname = nickname
-        self.scheduleType = scheduleType
+        self.scheduledTime = scheduledTime
         self.frequency = frequency
         self.dose = dose
         self.doseForm = doseForm
