@@ -84,6 +84,7 @@ class RewardScreenViewController: UIViewController {
     }
     
     func triggerDino() {
+        print("sending")
         let twilio: Twilio = Twilio()
         twilio.displayMessageInterface()
 

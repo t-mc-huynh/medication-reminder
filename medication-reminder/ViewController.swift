@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 
-
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
     var drug1: MedicationRecord = MedicationRecord(name: "Lorazepam", dose: 0.5, qty: 1, doseType: "MG", doseForm: "TAB", warnings: ["Avoid taking with alcohol", "Can cause drowsiness"], nickname: "Calming Pill", scheduledTime: "13:00", frequency: 1, totalQty: 30, refills:2, missedDosage: 0)
@@ -24,6 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "drug_search_cell"
     
+
     @objc func demoFunction() {
         new_Med.name = nameLabel.text!
         new_Med.nickname = nicknameLabel.text ?? "Medicine";

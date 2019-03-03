@@ -36,7 +36,7 @@ MFMessageComposeViewControllerDelegate {
             
             //Dose Notification
             composeVC.recipients = ["3234494226"]
-            composeVC.body = "It is time to take your daily medication dose."
+            composeVC.body = "It is time to take your calming pill dose."
             
             if MFMessageComposeViewController.canSendText() {
                 self.present(composeVC, animated: true, completion: nil)
