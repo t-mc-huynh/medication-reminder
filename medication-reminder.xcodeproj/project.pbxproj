@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17297F99222C1CD800C6D069 /* PenaltyScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17297F98222C1CD700C6D069 /* PenaltyScreens.storyboard */; };
+		17297F9B222C1D2000C6D069 /* PenaltyScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17297F9A222C1D2000C6D069 /* PenaltyScreenViewController.swift */; };
 		1768E34D222AD66500979362 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768E34C222AD66500979362 /* TableViewController.swift */; };
 		17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEC222A3D0000F44244 /* AppDelegate.swift */; };
 		17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEE222A3D0000F44244 /* ViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17297F98222C1CD700C6D069 /* PenaltyScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PenaltyScreens.storyboard; sourceTree = "<group>"; };
+		17297F9A222C1D2000C6D069 /* PenaltyScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyScreenViewController.swift; sourceTree = "<group>"; };
 		1768E34C222AD66500979362 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		17F82FE9222A3D0000F44244 /* medication-reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medication-reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F82FEC222A3D0000F44244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
 				EBE480F2222BEFC700DCD42B /* SplashController.swift */,
 				EBA20E2F222C0E780052D812 /* Twilio.swift */,
+				17297F98222C1CD700C6D069 /* PenaltyScreens.storyboard */,
+				17297F9A222C1D2000C6D069 /* PenaltyScreenViewController.swift */,
 			);
 			path = "medication-reminder";
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17297F99222C1CD800C6D069 /* PenaltyScreens.storyboard in Resources */,
 				EB1DC639222BC38400D81180 /* lottie_good_beary_good_job.json in Resources */,
 				EB1DC653222BC55D00D81180 /* lottie_star_dark.json in Resources */,
 				EB1DC637222BC37300D81180 /* lottie_smile_dark.json in Resources */,
@@ -370,6 +377,7 @@
 				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
 				17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */,
 				EBA20E2E222C0DEA0052D812 /* TrophyController.swift in Sources */,
+				17297F9B222C1D2000C6D069 /* PenaltyScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

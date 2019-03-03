@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Penalty Screen View Controller-->
+        <scene sceneID="me3-eG-nCe">
+            <objects>
+                <viewController storyboardIdentifier="PenaltyScreen1" modalTransitionStyle="crossDissolve" id="uYP-QT-5sv" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L9w-c3-M9W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjt-qZ-K2Y">
+                                <rect key="frame" x="36" y="541" width="303" height="48"/>
+                                <color key="backgroundColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="z4G-8o-VHw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96065989847715738" green="0.14868586923945337" blue="0.75023853064737522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Got it!">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NBv-WQ-Z3T" kind="show" id="Ih1-KV-eRb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well, that's awkward..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-Ac-HaN">
+                                <rect key="frame" x="36" y="76" width="303" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Kvi-Aq-0GI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="32"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7 days in and you've already missed a dose! Let's give it your best next time!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCj-OE-AmD">
+                                <rect key="frame" x="36" y="408" width="303" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ij2-hq-2rm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OnS-Ac-HaN" firstAttribute="leading" secondItem="Yys-u7-smo" secondAttribute="leading" constant="36" id="4kM-6B-EPL"/>
+                            <constraint firstItem="Yys-u7-smo" firstAttribute="bottom" secondItem="kjt-qZ-K2Y" secondAttribute="bottom" constant="78" id="Axj-p3-ALr"/>
+                            <constraint firstItem="Yys-u7-smo" firstAttribute="trailing" secondItem="uCj-OE-AmD" secondAttribute="trailing" constant="36" id="MdX-K8-Xnv"/>
+                            <constraint firstItem="kjt-qZ-K2Y" firstAttribute="top" secondItem="uCj-OE-AmD" secondAttribute="bottom" constant="36" id="O2q-6y-YRP"/>
+                            <constraint firstItem="OnS-Ac-HaN" firstAttribute="top" secondItem="Yys-u7-smo" secondAttribute="top" constant="56" id="cIK-U3-FxN"/>
+                            <constraint firstItem="Yys-u7-smo" firstAttribute="trailing" secondItem="OnS-Ac-HaN" secondAttribute="trailing" constant="36" id="gY6-CL-4C3"/>
+                            <constraint firstItem="Yys-u7-smo" firstAttribute="trailing" secondItem="kjt-qZ-K2Y" secondAttribute="trailing" constant="36" id="lLG-BU-1sq"/>
+                            <constraint firstItem="kjt-qZ-K2Y" firstAttribute="leading" secondItem="Yys-u7-smo" secondAttribute="leading" constant="36" id="ri2-Sy-n6R"/>
+                            <constraint firstItem="uCj-OE-AmD" firstAttribute="leading" secondItem="Yys-u7-smo" secondAttribute="leading" constant="36" id="uO5-GP-Odk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yys-u7-smo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2S-aN-UAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.2" y="88.605697151424295"/>
+        </scene>
+        <!--Penalty Screen View Controller-->
+        <scene sceneID="1ae-1q-UXh">
+            <objects>
+                <viewController storyboardIdentifier="PenaltyScreen2" modalTransitionStyle="crossDissolve" id="NBv-WQ-Z3T" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M25-Py-3aZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2R-xp-0nb">
+                                <rect key="frame" x="36" y="541" width="303" height="48"/>
+                                <color key="backgroundColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Efu-tc-708"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9606598985" green="0.14868586919999999" blue="0.75023853060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CALL PHARMACY">
+                                    <color key="titleColor" red="0.23959353051886578" green="0.78241875648463766" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAvocado:" destination="NBv-WQ-Z3T" eventType="touchUpInside" id="teJ-1U-3b0"/>
+                                    <segue destination="ud2-7K-SFG" kind="show" id="vlC-TE-5Oa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whale, whale, whale... what do we have here?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68x-cG-0dR">
+                                <rect key="frame" x="36" y="76" width="303" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="9uy-qj-3G2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-eV-MQo">
+                                <rect key="frame" x="36" y="378" width="303" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="yDp-wd-9iK"/>
+                                </constraints>
+                                <string key="text">It's important to remember to take your medications regularly.  Having trouble remembering? Having side effects? Give your pharmacy a call!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-8c-CE0">
+                                <rect key="frame" x="136" y="603" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="not right now">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49719885499617544" green="0.93130585492431683" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="68x-cG-0dR" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="0zS-bJ-79J"/>
+                            <constraint firstItem="wSQ-Cl-UJy" firstAttribute="trailing" secondItem="pAy-eV-MQo" secondAttribute="trailing" constant="36" id="8oV-Q2-A9W"/>
+                            <constraint firstItem="wSQ-Cl-UJy" firstAttribute="trailing" secondItem="68x-cG-0dR" secondAttribute="trailing" constant="36" id="IW0-lD-7GL"/>
+                            <constraint firstItem="wSQ-Cl-UJy" firstAttribute="bottom" secondItem="s2R-xp-0nb" secondAttribute="bottom" constant="78" id="JbJ-pb-f6P"/>
+                            <constraint firstItem="s2R-xp-0nb" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="S5z-hO-pvD"/>
+                            <constraint firstItem="s2R-xp-0nb" firstAttribute="top" secondItem="pAy-eV-MQo" secondAttribute="bottom" constant="36" id="ePC-oN-Cjc"/>
+                            <constraint firstItem="pAy-eV-MQo" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="gez-56-9ko"/>
+                            <constraint firstItem="68x-cG-0dR" firstAttribute="top" secondItem="wSQ-Cl-UJy" secondAttribute="top" constant="56" id="tGs-bt-lVs"/>
+                            <constraint firstItem="wSQ-Cl-UJy" firstAttribute="trailing" secondItem="s2R-xp-0nb" secondAttribute="trailing" constant="36" id="tw0-cK-vQH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wSQ-Cl-UJy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAo-8H-ltj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="88.605697151424295"/>
+        </scene>
+        <!--Penalty Screen View Controller-->
+        <scene sceneID="f9u-b1-TSK">
+            <objects>
+                <viewController storyboardIdentifier="PenaltyScreen3" modalTransitionStyle="crossDissolve" id="ud2-7K-SFG" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PNK-fa-O2V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-th-gK1">
+                                <rect key="frame" x="36" y="541" width="303" height="48"/>
+                                <color key="backgroundColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="wZI-6F-76S"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9606598985" green="0.14868586919999999" blue="0.75023853060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Let's Start!">
+                                    <color key="titleColor" red="1" green="0.54774540469999999" blue="0.59420640400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAvocado:" destination="ud2-7K-SFG" eventType="touchUpInside" id="OVf-sP-QVB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey! Just checking in..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVz-V5-aMo">
+                                <rect key="frame" x="36" y="76" width="303" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Fzz-g9-50Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66g-dN-C0b">
+                                <rect key="frame" x="36" y="378" width="303" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="0Am-Uj-uxA"/>
+                                </constraints>
+                                <string key="text">It's been a month since you first started, and we wanted to know if you were improving!  Answer a few questions, and we'll send the results to your doctor.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyS-g1-SVi">
+                                <rect key="frame" x="136" y="603" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="not right now">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.54774540468738731" blue="0.59420640401627289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="swY-hF-vOW" firstAttribute="bottom" secondItem="TdK-th-gK1" secondAttribute="bottom" constant="78" id="1Vt-a6-aUO"/>
+                            <constraint firstItem="TdK-th-gK1" firstAttribute="leading" secondItem="swY-hF-vOW" secondAttribute="leading" constant="36" id="20O-Th-zW0"/>
+                            <constraint firstItem="swY-hF-vOW" firstAttribute="trailing" secondItem="TdK-th-gK1" secondAttribute="trailing" constant="36" id="3GS-cq-GFd"/>
+                            <constraint firstItem="PVz-V5-aMo" firstAttribute="leading" secondItem="swY-hF-vOW" secondAttribute="leading" constant="36" id="8mR-ih-tNE"/>
+                            <constraint firstItem="swY-hF-vOW" firstAttribute="trailing" secondItem="PVz-V5-aMo" secondAttribute="trailing" constant="36" id="GZx-OT-C6Z"/>
+                            <constraint firstItem="swY-hF-vOW" firstAttribute="trailing" secondItem="66g-dN-C0b" secondAttribute="trailing" constant="36" id="O04-Hi-Rvr"/>
+                            <constraint firstItem="TdK-th-gK1" firstAttribute="top" secondItem="66g-dN-C0b" secondAttribute="bottom" constant="36" id="Uum-1i-j4C"/>
+                            <constraint firstItem="66g-dN-C0b" firstAttribute="leading" secondItem="swY-hF-vOW" secondAttribute="leading" constant="36" id="W6d-Hd-RCT"/>
+                            <constraint firstItem="PVz-V5-aMo" firstAttribute="top" secondItem="swY-hF-vOW" secondAttribute="top" constant="56" id="fld-WI-WTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="swY-hF-vOW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWa-M5-xOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="89"/>
+        </scene>
+    </scenes>
+</document>
