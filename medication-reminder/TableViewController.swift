@@ -9,7 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
+    var medicine: [MedicationRecord]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +28,10 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as UITableViewCell
+        
+//        let name = medicine.enumerated().compactMap{$0.offset < 1000 ? $0.element : nil}
+//        let first = String(name[0])
+//        cell.textLabel?.text = first
         
         return cell
     }
