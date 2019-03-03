@@ -10,7 +10,17 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    var drug1: MedicationRecord = MedicationRecord(name: "Lorazepam", dose: 0.5, qty: 1, doseType: "MG", doseForm: "TAB", warnings: ["Avoid taking with alcohol", "Can cause drowsiness"], nickname: "Calming Pill", scheduledTime: "13:00", frequency: 1, totalQty: 30, refills:2)
+    var drug2: MedicationRecord = MedicationRecord(name: "Zopiclone", dose:5.0, qty: 1,doseType:"MG", doseForm:"TAB", warnings: ["Avoid taking with alcohol"], nickname: "Sleeping Pill", scheduledTime:"22:00", frequency:1, totalQty:30, refills: 2)
+    var drug3: MedicationRecord = MedicationRecord(name:"Escitalopram oxalate (Cipralex)", dose:20, qty:30, doseType:"MG", doseForm:"TAB", warnings:[], nickname:"E", scheduledTime: "07:00", frequency: 1, totalQty: 30, refills:3)
+    
     var medicine: [MedicationRecord]!
+    
+//    var medicationName: UITextField = {
+//        let name: UITextField
+//        name.text = String(drug1.name)
+//        return name
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +38,8 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as UITableViewCell
+        
+        cell.textLabel?.text = medicine.getName()
         
         
         return cell
