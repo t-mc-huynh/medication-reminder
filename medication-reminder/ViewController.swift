@@ -50,8 +50,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @objc func demoFunction() {
         nameLabel.text = "Lorazepam"
         nicknameLabel.text = "Calming pill"
-        doseLabel.text = "1 per day"
-        freqLabel.text =
+        doseLabel.text = "0.06"
+        freqLabel.text = "1"
+        refillLabel.text = "0"
+        qtyLabel.text = "10"
+        totalQtyLabel.text = "10"
+        missedDoseLabel.text = "2"
     }
 
     override func didReceiveMemoryWarning() {
