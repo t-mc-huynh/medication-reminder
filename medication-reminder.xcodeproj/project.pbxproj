@@ -47,6 +47,7 @@
 		EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E16222ACB3C006DBFF0 /* Medications.swift */; };
 		EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */; };
 		EBCF9E1D222B23CC006DBFF0 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1C222B23CC006DBFF0 /* Medication.swift */; };
+		EBE480F3222BEFC700DCD42B /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE480F2222BEFC700DCD42B /* SplashController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		EBCF9E16222ACB3C006DBFF0 /* Medications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications.swift; sourceTree = "<group>"; };
 		EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRecord.swift; sourceTree = "<group>"; };
 		EBCF9E1C222B23CC006DBFF0 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		EBE480F2222BEFC700DCD42B /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */,
 				EBCF9E1C222B23CC006DBFF0 /* Medication.swift */,
 				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
+				EBE480F2222BEFC700DCD42B /* SplashController.swift */,
 			);
 			path = "medication-reminder";
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */,
 				17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */,
 				EB1DC629222BB82400D81180 /* RewardScreenViewController.swift in Sources */,
+				EBE480F3222BEFC700DCD42B /* SplashController.swift in Sources */,
 				EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */,
 				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
 				1768E34D222AD66500979362 /* TableViewController.swift in Sources */,

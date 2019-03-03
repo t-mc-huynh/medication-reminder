@@ -38,6 +38,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //    }
     //
     
+//    @IBAction func splashScreenButton(_ sender: UIButton) {
+//        let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
+//        present(vc, animated: true, completion: nil)
+//    }
     @IBOutlet weak var drugSearchTable: UITableView!
     @IBOutlet weak var medRecordTable: UITableView!
     @IBOutlet weak var drugSearchField: UITextField!
@@ -160,12 +165,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
-    
-    @objc func didButtonClick(_ sender: UIButton) {
-        // your code goes here
-        print("test")
-    }
-    
+
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.medicationsList.count
@@ -194,22 +194,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         present(vc, animated: true, completion: nil)
     }
 
-    //MARK: actions
-    //    @IBAction func infoButton(_ sender: Any) {
-    //    }
+    @IBAction func saveAndSubmit(_ sender: UIButton) {
+        
+    }
     
-    
-    //    @IBAction func medSearchInput(_ sender: UITextField) {
-    //            print("here1")
-    //        if (sender.text != nil) {
-    //            medicationsList = medicationsData.findMatchingMedications(searchTerm: sender.text ?? "")
-    //            print("here")
-    //            for (med in medicationsList) {
-    
-    //            }
-    // TODO: Update Table with medicationsData
-    //        }
-    //    }
 }
 
 extension ViewController: CAAnimationDelegate {
