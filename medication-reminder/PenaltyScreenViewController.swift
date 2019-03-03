@@ -57,6 +57,4 @@ class PenaltyScreenViewController: UIViewController {
             animationView.play()
         }
     }
-    
-    
 }
