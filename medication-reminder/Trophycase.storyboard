@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mOf-05-kuN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trophy Controller-->
+        <scene sceneID="x0H-GD-xqJ">
+            <objects>
+                <viewController storyboardIdentifier="Achievement1" modalTransitionStyle="crossDissolve" id="mOf-05-kuN" customClass="TrophyController" customModule="medication_reminder" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cng-xP-OzE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-Tw-5RA">
+                                <rect key="frame" x="16" y="76" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 1"/>
+                                <connections>
+                                    <action selector="Goal1:" destination="mOf-05-kuN" eventType="touchUpInside" id="g56-dd-6dz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYU-Ss-7Id">
+                                <rect key="frame" x="273" y="195" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 6"/>
+                                <connections>
+                                    <action selector="Goal6:" destination="mOf-05-kuN" eventType="touchUpInside" id="UVN-Uz-RdH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-Zm-kzx">
+                                <rect key="frame" x="148" y="76" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 2"/>
+                                <connections>
+                                    <action selector="Goal2:" destination="mOf-05-kuN" eventType="touchUpInside" id="ywt-pJ-aQc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-Dl-s4E">
+                                <rect key="frame" x="148" y="195" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 5"/>
+                                <connections>
+                                    <action selector="Goal5:" destination="mOf-05-kuN" eventType="touchUpInside" id="1cM-F0-TMt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxk-aE-c16">
+                                <rect key="frame" x="16" y="195" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 4"/>
+                                <connections>
+                                    <action selector="Goal4:" destination="mOf-05-kuN" eventType="touchUpInside" id="GYE-EQ-edk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-rJ-3hX">
+                                <rect key="frame" x="16" y="318" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 7"/>
+                                <connections>
+                                    <action selector="Goal7:" destination="mOf-05-kuN" eventType="touchUpInside" id="bHG-FZ-l86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF6-jl-OG3">
+                                <rect key="frame" x="16" y="452" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 10"/>
+                                <connections>
+                                    <action selector="Goal10:" destination="mOf-05-kuN" eventType="touchUpInside" id="iZJ-UM-E25"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYJ-op-aQv">
+                                <rect key="frame" x="148" y="452" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 11"/>
+                                <connections>
+                                    <action selector="Goal11:" destination="mOf-05-kuN" eventType="touchUpInside" id="oBA-St-02s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cW-IS-y9c">
+                                <rect key="frame" x="273" y="452" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 12"/>
+                                <connections>
+                                    <action selector="Goal12:" destination="mOf-05-kuN" eventType="touchUpInside" id="hbc-ag-OCm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9i-Hb-jWu">
+                                <rect key="frame" x="148" y="318" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 8"/>
+                                <connections>
+                                    <action selector="Goal8:" destination="mOf-05-kuN" eventType="touchUpInside" id="vbK-gP-VYK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC8-1C-rrM">
+                                <rect key="frame" x="273" y="318" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 9"/>
+                                <connections>
+                                    <action selector="Goal9:" destination="mOf-05-kuN" eventType="touchUpInside" id="e4I-dF-e2a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhT-Ag-ejl">
+                                <rect key="frame" x="273" y="76" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Goal 3"/>
+                                <connections>
+                                    <action selector="Goal3:" destination="mOf-05-kuN" eventType="touchUpInside" id="vpj-89-jCI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Unlocked Achievements: 8/12 this month" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vnQ-B3-IZs">
+                                <rect key="frame" x="49" y="27" width="277" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hdS-Sh-SL3"/>
+                    </view>
+                    <connections>
+                        <outlet property="Goal10" destination="cng-xP-OzE" id="3Dc-ox-xan"/>
+                        <segue destination="im3-cL-JNd" kind="presentation" identifier="reward_segue" id="lEw-Re-6EO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVo-4i-AZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.2" y="88.605697151424295"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kOw-yL-o75">
+            <objects>
+                <viewController modalTransitionStyle="partialCurl" id="im3-cL-JNd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ooW-Sh-thv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9mY-P9-23U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTF-1N-tcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="89"/>
+        </scene>
+    </scenes>
+</document>

@@ -29,9 +29,6 @@
                                 <state key="normal" title="back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5BD-oe-3Cy" kind="show" id="74Q-zU-z6t"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqF-mp-GQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2511.1999999999998" y="179.46026986506749"/>
+            <point key="canvasLocation" x="-2015" y="421"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="eR9-nq-YcY">
@@ -89,9 +86,6 @@
                                         <state key="normal" title="back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="5BD-oe-3Cy" kind="show" id="znk-pS-puc"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-6O-Rrn">
                                         <rect key="frame" x="0.0" y="30" width="375" height="30"/>
@@ -190,11 +184,12 @@
                         <outlet property="drugSearchField" destination="YET-oO-TQv" id="fOf-AG-CrS"/>
                         <outlet property="drugSearchTable" destination="Sua-9J-TYE" id="zIB-YY-CAp"/>
                         <outlet property="medRecordTable" destination="JyJ-Vz-9rg" id="amm-cA-uIe"/>
+                        <segue destination="q3T-iT-5m8" kind="show" id="4r9-yb-UQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEr-cX-QpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1503.2" y="178.56071964017991"/>
+            <point key="canvasLocation" x="-1446" y="-691"/>
         </scene>
         <!--Item-->
         <scene sceneID="q6G-RD-5YQ">
@@ -267,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Kr-7l-5ZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-208.80000000000001" y="178.56071964017991"/>
+            <point key="canvasLocation" x="-658" y="421"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="jLP-hf-LeH">
@@ -284,9 +279,6 @@
                             <state key="normal" title="back">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
-                            <connections>
-                                <segue destination="5BD-oe-3Cy" kind="show" id="HZN-1f-j3r"/>
-                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ToDoCell" id="GJk-cd-0ea">
@@ -306,9 +298,6 @@
                                             <rect key="frame" x="285" y="11" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
-                                            <connections>
-                                                <segue destination="tgn-Wz-V3l" kind="show" id="tVV-Cn-cw1"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -325,10 +314,13 @@
                             <outlet property="delegate" destination="q3T-iT-5m8" id="j92-1I-AUG"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="tgn-Wz-V3l" kind="show" id="RQc-d4-TOk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ew-zJ-kl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="179"/>
+            <point key="canvasLocation" x="-657" y="-691"/>
         </scene>
         <!--InfoPage-->
         <scene sceneID="pN8-c6-kQe">
@@ -344,9 +336,6 @@
                                 <state key="normal" title="back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="q3T-iT-5m8" kind="show" id="gs2-Ps-PZW"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-6U-R2V">
                                 <rect key="frame" x="105" y="30" width="165.5" height="51"/>
@@ -581,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqb-GC-1T0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320.80000000000001" y="947.67616191904051"/>
+            <point key="canvasLocation" x="111" y="-691"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yy4-3q-GDf">
@@ -715,18 +704,18 @@
                                 <state key="normal" title="back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5BD-oe-3Cy" kind="presentation" id="ZlJ-SE-WWf"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9eS-Sa-jIg"/>
                     </view>
+                    <connections>
+                        <segue destination="KhE-uV-Hdw" kind="show" id="6GY-vp-WbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oa-Jq-zVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852" y="178.56071964017991"/>
+            <point key="canvasLocation" x="-2270" y="-691"/>
         </scene>
         <!--Item-->
         <scene sceneID="fBQ-fW-Oh2">
@@ -747,9 +736,6 @@
                                 <state key="normal" title="back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5BD-oe-3Cy" kind="show" id="ghn-F2-7QY"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -759,7 +745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSs-oQ-qec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="168.6656671664168"/>
+            <point key="canvasLocation" x="110" y="421"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mzv-ew-TgH">
@@ -784,18 +770,18 @@
                                 <rect key="frame" x="113" y="181" width="204" height="204.00000000000011"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="logo"/>
-                                <connections>
-                                    <segue destination="5BD-oe-3Cy" kind="presentation" id="1b0-vP-aCt"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Phi-mx-9de"/>
                     </view>
+                    <connections>
+                        <segue destination="XUU-bT-T0j" kind="presentation" id="AnC-3M-c2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVi-5u-7YO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2242.4000000000001" y="-708.39580209895053"/>
+            <point key="canvasLocation" x="-3060" y="-691"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="yHL-hU-UcQ">
@@ -816,9 +802,6 @@
                                 <state key="normal" title="page 1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="XUU-bT-T0j" kind="presentation" id="FhX-qS-cL9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-lc-Eau">
                                 <rect key="frame" x="67" y="162" width="48" height="30"/>
@@ -827,9 +810,6 @@
                                 <state key="normal" title="page 2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="KhE-uV-Hdw" kind="show" id="8ch-Tu-xv4"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8o-vl-EQG">
                                 <rect key="frame" x="67" y="207" width="48" height="30"/>
@@ -846,9 +826,6 @@
                                 <state key="normal" title="page 4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="q3T-iT-5m8" kind="show" id="sAf-8F-4dw"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -858,15 +835,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-73-tPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1414" y="-629"/>
+            <point key="canvasLocation" x="-1342" y="421"/>
         </scene>
     </scenes>
     <resources>
         <image name="audio" width="30" height="30"/>
         <image name="logo" width="37" height="37"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="1b0-vP-aCt"/>
-        <segue reference="gs2-Ps-PZW"/>
-    </inferredMetricsTieBreakers>
 </document>

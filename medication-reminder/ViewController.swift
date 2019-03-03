@@ -70,19 +70,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         
         // Register the table view cell class and its reuse id
-        self.drugSearchTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+//        self.drugSearchTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
-        self.languagePicker.delegate = self as UIPickerViewDelegate
-        self.languagePicker.dataSource = self as UIPickerViewDataSource
+//        self.languagePicker.delegate = self as UIPickerViewDelegate
+//        self.languagePicker.dataSource = self as UIPickerViewDataSource
         
         pickerData = ["English", "Spanish", "Chinese", "French", "Vietnamese"]
         // Do any additional setup after loading the view, typically from a nib.
         
-        demoFunction()
+//        demoFunction()
         
-        drugSearchTable.delegate = self as? UITableViewDelegate
-        drugSearchTable.dataSource = self as? UITableViewDataSource
-        drugSearchField.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
+//        drugSearchTable.delegate = self as? UITableViewDelegate
+//        drugSearchTable.dataSource = self as? UITableViewDataSource
+//        drugSearchField.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
     }
 
     override func viewDidAppear(_ animated: Bool) {
