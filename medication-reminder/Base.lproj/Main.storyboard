@@ -136,7 +136,7 @@
                                         <color key="textColor" red="0.96620899439999997" green="0.30525561509999999" blue="0.71947154069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-6O-Rrn">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-6O-Rrn">
                                         <rect key="frame" x="0.0" y="616" width="415" height="30"/>
                                         <color key="backgroundColor" red="0.073899536425304918" green="0.78940657383419688" blue="0.01322638129402955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,7 +145,7 @@
                                             <action selector="saveAndSubmit:" destination="KhE-uV-Hdw" eventType="touchUpInside" id="3Tp-Sd-dAm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plt-EO-oNk">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plt-EO-oNk">
                                         <rect key="frame" x="0.0" y="646" width="56" height="30"/>
                                         <color key="backgroundColor" red="0.073899536429999996" green="0.78940657380000001" blue="0.01322638129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,8 +155,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-3g-Ksf">
-
-                                        <rect key="frame" x="82" y="500" width="269" height="30"/>
+                                        <rect key="frame" x="82" y="-78" width="269" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-1S-YFS">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -269,16 +268,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.97933279418583319" green="0.97807776492647269" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-
-                                    <constraint firstItem="Tli-mn-fO6" firstAttribute="leading" secondItem="Fqs-6L-jJf" secondAttribute="leading" constant="12" id="5J2-C4-UZN"/>
-                                    <constraint firstItem="9jZ-6O-Rrn" firstAttribute="top" secondItem="Tli-mn-fO6" secondAttribute="bottom" constant="8" symbolic="YES" id="9jk-X8-K8E"/>
-                                    <constraint firstItem="Tli-mn-fO6" firstAttribute="top" secondItem="daM-4k-PSu" secondAttribute="bottom" constant="61" id="Ddf-bY-y7D"/>
+                                    <constraint firstAttribute="leading" secondItem="Fqs-6L-jJf" secondAttribute="leading" constant="12" id="5J2-C4-UZN"/>
+                                    <constraint firstAttribute="top" secondItem="daM-4k-PSu" secondAttribute="bottom" constant="61" id="Ddf-bY-y7D"/>
                                     <constraint firstItem="wvr-6Q-udp" firstAttribute="top" secondItem="Fqs-6L-jJf" secondAttribute="top" constant="79" id="Fl7-6A-eZk"/>
                                     <constraint firstAttribute="trailing" secondItem="zkx-3g-Ksf" secondAttribute="trailing" constant="24" id="MZQ-f7-iYw"/>
                                     <constraint firstItem="9jZ-6O-Rrn" firstAttribute="leading" secondItem="plt-EO-oNk" secondAttribute="leading" id="N5D-c2-1Cl"/>
                                     <constraint firstItem="ll2-pm-j5i" firstAttribute="top" secondItem="Fqs-6L-jJf" secondAttribute="top" constant="36" id="R8P-Bx-wUw"/>
                                     <constraint firstItem="ll2-pm-j5i" firstAttribute="centerX" secondItem="9jZ-6O-Rrn" secondAttribute="centerX" id="SKH-Pa-eDI"/>
-                                    <constraint firstItem="Tli-mn-fO6" firstAttribute="top" secondItem="zkx-3g-Ksf" secondAttribute="bottom" constant="48" id="SbG-c4-Cap"/>
+                                    <constraint firstAttribute="top" secondItem="zkx-3g-Ksf" secondAttribute="bottom" constant="48" id="SbG-c4-Cap"/>
                                     <constraint firstItem="zkx-3g-Ksf" firstAttribute="leading" secondItem="Fqs-6L-jJf" secondAttribute="leading" constant="82" id="aYc-e1-D7W"/>
                                     <constraint firstAttribute="bottom" secondItem="plt-EO-oNk" secondAttribute="bottom" constant="-29" id="cg1-mb-Nai"/>
                                     <constraint firstItem="wvr-6Q-udp" firstAttribute="leading" secondItem="Fqs-6L-jJf" secondAttribute="leadingMargin" id="clV-ss-a6h"/>
