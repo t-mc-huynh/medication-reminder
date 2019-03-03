@@ -9,7 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
+    var medicine: [MedicationRecord]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,31 +29,34 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as UITableViewCell
         
+        
         return cell
     }
     
 //  checkmark swipe
     
-//    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//        let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
-//            completion(true)
-//        }
-//
-//        action.image = #imageLiteral(resourceName: "check")
-//        action.backgroundColor = .green
-//
-//
-//        return UISwipeActionsConfiguration(actions: [action])
-//    }
-    
-    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as UITableViewCell
-        cell.tintColor = UIColor.red
-        
-        cell.accessoryType = .checkmark
-        
-        //return cell
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
+            completion(true)
+        }
+
+        action.image = #imageLiteral(resourceName: "check")
+        action.backgroundColor = .green
+
+
+        return UISwipeActionsConfiguration(actions: [action])
     }
+    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as UITableViewCell
+//        cell.tintColor = UIColor.red
+//
+//        cell.accessoryType = .checkmark
+//
+//        //cell.tintColor = UIColor.init(named: "red")
+//
+//        return cell
+//    }
 
     /*
     // Override to support conditional editing of the table view.
