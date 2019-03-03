@@ -14,17 +14,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var medicationsData: Medications = Medications()
     var medicationsList: [Medication] = []
 //    var tableView: UITableView = UITableView()
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "drug_search_cell"
     
     //MARK: properties
 //        @IBOutlet var tableView: UITableView!
-
+//    @IBAction func drugSearchInput(_ sender: UITextField) {
+//        print("here1")
+//    }
+//
     @IBOutlet weak var drugSearchTable: UITableView!
-    @IBOutlet weak var drugSearchBar: UITextField!
     @IBOutlet weak var medRecordTable: UITableView!
-
+    @IBOutlet weak var drugSearchField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,11 +39,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // This view controller itself will provide the delegate methods and row data for the table view.
         drugSearchTable.delegate = self
         drugSearchTable.dataSource = self
+        drugSearchField.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)    }
+    
+    @objc func didButtonClick(_ sender: UIButton) {
+        // your code goes here
+        print("test")
     }
     
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.count
+        return self.medicationsList.count
     }
     
     // create a cell for each table view row
@@ -51,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell:UITableViewCell = self.drugSearchTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
         
         // set the text from the data model
-        cell.textLabel?.text = self.animals[indexPath.row]
+        cell.textLabel?.text = self.medicationsList[indexPath.row].getName()
         
         return cell
     }
@@ -61,18 +68,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("You tapped cell number \(indexPath.row).")
     }
     
+//    @IBAction func drugSearchField(_ sender: UITextField) {
+//        print("here1")
+//    }
     //MARK: actions
-    @IBAction func infoButton(_ sender: Any) {
-        
-    }
+//    @IBAction func infoButton(_ sender: Any) {
+//    }
     
-    @IBAction func medSearchInput(_ sender: UITextField) {
-        
-        if (sender.text != nil) {
-            medicationsList = medicationsData.findMatchingMedications(searchTerm: sender.text ?? "")
+  
+//    @IBAction func medSearchInput(_ sender: UITextField) {
+//            print("here1")
+//        if (sender.text != nil) {
+//            medicationsList = medicationsData.findMatchingMedications(searchTerm: sender.text ?? "")
+//            print("here")
+//            for (med in medicationsList) {
             
+//            }
             // TODO: Update Table with medicationsData
-        }
-    }
+//        }
+//    }
 }
 
