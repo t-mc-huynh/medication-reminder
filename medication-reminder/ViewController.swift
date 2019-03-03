@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var MOCK_MEDICATION_TUPLES: [(String, [Float], String, String, [String])] = []
@@ -19,9 +20,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var userInput: String!
     //var list: Medications!
     
+    @IBAction func medicationInput(_ sender: Any) {
+        print(123)
+    }
     
     @IBAction func medSearchButton(_ sender: UIButton) {
-        
+        print(999)
     }
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -38,8 +42,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.languagePicker.delegate = self
-        self.languagePicker.dataSource = self
+        self.languagePicker.delegate = self as UIPickerViewDelegate
+        self.languagePicker.dataSource = self as UIPickerViewDataSource
         
         pickerData = ["English", "Spanish", "Chinese", "French", "Vietnamese"]
         // Do any additional setup after loading the view, typically from a nib.
@@ -57,7 +61,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         totalQtyLabel.text = "10"
         missedDoseLabel.text = "2"
     }
+    
+    let synthesizer = AVSpeechSynthesizer()
+    
+    let textToSpeech = "Testing sentence"
 
+    @IBAction func textSpeechButton(_ sender: UIButton) {
+        let utterance = AVSpeechUtterance(string: textToSpeech)
+        synthesizer.speak(utterance)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

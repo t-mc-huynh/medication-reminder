@@ -87,12 +87,15 @@ or product </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. &quot;Tylenol&quot;" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-ML-dgo">
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. &quot;Tylenol&quot;" minimumFontSize="17" disabledBackground="audio" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-ML-dgo">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="medicationInput:" destination="KhE-uV-Hdw" eventType="editingDidEnd" id="qkA-4f-6Ie"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -520,6 +523,16 @@ or product </string>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-5d-RQb">
+                                <rect key="frame" x="258" y="234" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="audio">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="textSpeechButton:" destination="tgn-Wz-V3l" eventType="touchUpInside" id="MdJ-wC-cmQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -552,6 +565,7 @@ or product </string>
                             <constraint firstItem="0p2-Fb-vMW" firstAttribute="centerY" secondItem="CtA-mQ-I0H" secondAttribute="centerY" id="qMo-Wm-w9j"/>
                             <constraint firstItem="lBc-6U-R2V" firstAttribute="centerX" secondItem="bH6-SO-UIW" secondAttribute="centerX" id="tkM-2k-d8B"/>
                             <constraint firstItem="yKS-2X-pbS" firstAttribute="top" secondItem="CtA-mQ-I0H" secondAttribute="bottom" constant="17.5" id="y3g-ho-WfN"/>
+                            <constraint firstItem="hwz-Dk-PG2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lBc-6U-R2V" secondAttribute="trailing" constant="8" symbolic="YES" id="yqa-th-QJf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r6f-Ob-nNV"/>
                     </view>
@@ -740,7 +754,7 @@ or product </string>
         <image name="audio" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HZN-1f-j3r"/>
+        <segue reference="znk-pS-puc"/>
         <segue reference="gs2-Ps-PZW"/>
     </inferredMetricsTieBreakers>
 </document>
