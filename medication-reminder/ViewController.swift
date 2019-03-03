@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var medicationsData: Medications = Medications()
     var medicationsList: [Medication] = []
     var medRecordList: [MedicationRecord] = []
-    var new_Med : MedicationRecord
+    var new_Med : MedicationRecord!
     //    var tableView: UITableView = UITableView()
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "drug_search_cell"
