@@ -21,8 +21,9 @@ class MedicationRecord {
     var frequency: Int              // 1   --> as in "every 1 day(s)"
     var totalQty: Float             // 30  --< as in 30 pills for this Rx
     var refills: Int                // 3
+    var missedDosage: Int           // 0   --> acts as a counter that starts at 0
     
-    public init(name: String, dose: Float, qty: Float, doseType: String, doseForm: String, warnings: [String], nickname: String, scheduledTime: String, frequency: Int, totalQty: Float, refills: Int) {
+    public init(name: String, dose: Float, qty: Float, doseType: String, doseForm: String, warnings: [String], nickname: String, scheduledTime: String, frequency: Int, totalQty: Float, refills: Int, missedDosage: Int) {
         self.name = name
         self.dose = dose
         self.qty = qty
@@ -34,6 +35,7 @@ class MedicationRecord {
         self.frequency = frequency
         self.totalQty = totalQty
         self.refills = refills
+        self.missedDosage = missedDosage
     }
     
     public func getName() -> String { return self.name }
@@ -47,6 +49,7 @@ class MedicationRecord {
     public func getFrequency() -> Int { return self.frequency }
     public func getTotalQty() -> Float { return self.totalQty }
     public func getRefills() -> Int { return self.refills }
+    public func getMissedDosage() -> Int { return self.missedDosage }
     
     public func setQty(qty: Float) { self.qty = qty }
     public func setWarnings(warnings: [String]) { self.warnings = warnings }
@@ -55,4 +58,5 @@ class MedicationRecord {
     public func setFrequency(frequency: Int) { self.frequency = frequency }
     public func setTotalQty(totalQty: Float) { self.totalQty = totalQty }
     public func setRefills(refills: Int) { self.refills = refills }
+    public func setMissedDosage(missedDosage: Int) { self.missedDosage = missedDosage }
 }

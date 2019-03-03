@@ -35,7 +35,7 @@ MFMessageComposeViewControllerDelegate {
         if ((initialTime.timeIntervalSinceNow * -1) < 20) {
             
             //Dose Notification
-            composeVC.recipients = ["3214003953"]
+            composeVC.recipients = ["3234494226"]
             composeVC.body = "It is time to take your daily medication dose."
             
             if MFMessageComposeViewController.canSendText() {
@@ -48,7 +48,7 @@ MFMessageComposeViewControllerDelegate {
             if (initialTime.timeIntervalSinceNow * -1) > 20 {
                 
                 //Text Buddy
-                composeVC.recipients = ["3214003953"]
+                composeVC.recipients = ["3234494226"]
                 composeVC.body = "Alert: you missed your dose today. "
                 
                 if MFMessageComposeViewController.canSendText() {

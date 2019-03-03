@@ -63,8 +63,10 @@ class RewardScreenViewController: UIViewController {
     
     
     @IBAction func clickDino(_ sender: UIButton) {
-    
+        triggerDino()
     }
+    
+    
     
     
     func triggerTrophy() {
@@ -82,23 +84,11 @@ class RewardScreenViewController: UIViewController {
     }
     
     func triggerDino() {
-        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_good_dino_dance")
-        
-        if animationView != nil {
-            animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
-            animationView.center = self.view.center
-            //            animationView.contentMode = .scaleAspectFill
-            
-            view.addSubview(animationView)
-            animationView.loopAnimation = true
-            animationView.play()
-        }
-        
         let twilio: Twilio = Twilio()
         twilio.displayMessageInterface()
 
-        let storyboard = UIStoryboard(name: "Trophycase", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Trophycase") as UIViewController
+        let storyboard = UIStoryboard(name: "PenaltyScreens", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PenaltyScreen1") as UIViewController
         self.present(vc, animated: true, completion: nil)
     }
     

@@ -12,16 +12,30 @@ import AVFoundation
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
-    var drug1: MedicationRecord = MedicationRecord(name: "Lorazepam", dose: 0.5, qty: 1, doseType: "MG", doseForm: "TAB", warnings: ["Avoid taking with alcohol", "Can cause drowsiness"], nickname: "Calming Pill", scheduledTime: "13:00", frequency: 1, totalQty: 30, refills:2)
-    var drug2: MedicationRecord = MedicationRecord(name: "Zopiclone",dose:5.0, qty: 1,doseType:"MG", doseForm:"TAB",warnings:["Avoid taking with alcohol"], nickname:"Sleeping Pill", scheduledTime:"22:00", frequency:1, totalQty:30, refills: 2)
-    var drug3: MedicationRecord = MedicationRecord(name:"Escitalopram oxalate (Cipralex)",dose:20, qty:30, doseType:"MG", doseForm:"TAB", warnings:[], nickname:"E", scheduledTime:"07:00",frequency: 1, totalQty: 30, refills:3)
+    var drug1: MedicationRecord = MedicationRecord(name: "Lorazepam", dose: 0.5, qty: 1, doseType: "MG", doseForm: "TAB", warnings: ["Avoid taking with alcohol", "Can cause drowsiness"], nickname: "Calming Pill", scheduledTime: "13:00", frequency: 1, totalQty: 30, refills:2, missedDosage: 0)
+    var drug2: MedicationRecord = MedicationRecord(name: "Zopiclone",dose:5.0, qty: 1,doseType:"MG", doseForm:"TAB",warnings:["Avoid taking with alcohol"], nickname:"Sleeping Pill", scheduledTime:"22:00", frequency:1, totalQty:30, refills: 2, missedDosage: 0)
+    var drug3: MedicationRecord = MedicationRecord(name:"Escitalopram oxalate (Cipralex)",dose:20, qty:30, doseType:"MG", doseForm:"TAB", warnings:[], nickname:"E", scheduledTime:"07:00",frequency: 1, totalQty: 30, refills:3, missedDosage: 0)
     
     var medicationsData: Medications = Medications()
     var medicationsList: [Medication] = []
     var medRecordList: [MedicationRecord] = []
+    var new_Med : MedicationRecord!
     //    var tableView: UITableView = UITableView()
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "drug_search_cell"
+    
+    @objc func demoFunction() {
+        new_Med.name = nameLabel.text!
+        new_Med.nickname = nicknameLabel.text ?? "Medicine";
+        new_Med.dose = Float(doseLabel.text!) ?? Float("0")!;
+        new_Med.frequency = Int(freqLabel.text!) ?? Int("1")!;
+        new_Med.refills = Int(refillLabel.text!) ?? Int("0")!;
+        new_Med.qty = Float(qtyLabel.text!) ?? Float("0.0")!;
+        new_Med.totalQty = (Float(totalQtyLabel.text!))!;
+        new_Med.missedDosage = Int(missedDoseLabel.text!) ?? Int("0")!;
+        
+        medRecordList.append(new_Med);
+    }
 
     let gradient = CAGradientLayer()
     var gradientSet = [[CGColor]]()
@@ -118,16 +132,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         gradient.add(gradientChangeAnimation, forKey: "colorChange")
     }
 
-    @objc func demoFunction() {
-        nameLabel.text = "Lorazepam"
-        nicknameLabel.text = "Calming pill"
-        doseLabel.text = "0.6"
-        freqLabel.text = "1"
-        refillLabel.text = "2"
-        qtyLabel.text = "1"
-        totalQtyLabel.text = "10"
-        missedDoseLabel.text = "2"
-    }
+
     
     let synthesizer = AVSpeechSynthesizer()
     
@@ -190,6 +195,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 //            let vc = storyboard.instantiateViewController(withIdentifier: "PenaltyScreen2") as UIViewController
 //            tree.present(vc, animated: true, completion: nil)
         })
+
     }
 
     @IBAction func saveAndSubmit(_ sender: UIButton) {
@@ -202,6 +208,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 //            let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
 //            self.present(vc, animated: true, completion: nil)
 //        })
+
+        
+        demoFunction()
      }
     
     

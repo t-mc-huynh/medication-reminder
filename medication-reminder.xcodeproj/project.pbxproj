@@ -187,9 +187,9 @@
 				EBCF9E16222ACB3C006DBFF0 /* Medications.swift */,
 				EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */,
 				EBCF9E1C222B23CC006DBFF0 /* Medication.swift */,
-				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
 				EBE480F2222BEFC700DCD42B /* SplashController.swift */,
 				EBA20E2F222C0E780052D812 /* Twilio.swift */,
+				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
 				17297F98222C1CD700C6D069 /* PenaltyScreens.storyboard */,
 				17297F9A222C1D2000C6D069 /* PenaltyScreenViewController.swift */,
 			);
