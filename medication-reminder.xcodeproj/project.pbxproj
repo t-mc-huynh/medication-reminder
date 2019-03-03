@@ -14,7 +14,7 @@
 		17F82FF4222A3D0300F44244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF3222A3D0300F44244 /* Assets.xcassets */; };
 		17F82FF7222A3D0300F44244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */; };
 		406926C989B1C3B18CEC89EA /* Pods_medication_reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */; };
-		EB1DC5FB222BA55A00D81180 /* RewardScreens2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC5FA222BA55A00D81180 /* RewardScreens2.storyboard */; };
+		EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */; };
 		EB1DC629222BB82400D81180 /* RewardScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */; };
 		EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */; };
 		EB1DC62D222BBDD400D81180 /* lottie_archery_target_achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */; };
@@ -66,7 +66,7 @@
 		3DAD49CC6DAE78C4DF5BCB5F /* Pods-medication-reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.debug.xcconfig"; path = "Target Support Files/Pods-medication-reminder/Pods-medication-reminder.debug.xcconfig"; sourceTree = "<group>"; };
 		74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medication_reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FF79A25BA65B56ADAA6D80 /* Pods-medication-reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.release.xcconfig"; path = "Target Support Files/Pods-medication-reminder/Pods-medication-reminder.release.xcconfig"; sourceTree = "<group>"; };
-		EB1DC5FA222BA55A00D81180 /* RewardScreens2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardScreens2.storyboard; sourceTree = "<group>"; };
+		EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardScreens.storyboard; sourceTree = "<group>"; };
 		EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreenViewController.swift; sourceTree = "<group>"; };
 		EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_whale_whale_whale.json; sourceTree = "<group>"; };
 		EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_archery_target_achieved.json; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				EB1DC66A222BE81400D81180 /* Trophycase.storyboard */,
 				17F82FF0222A3D0000F44244 /* Main.storyboard */,
 				17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */,
-				EB1DC5FA222BA55A00D81180 /* RewardScreens2.storyboard */,
+				EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */,
 				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
 				17F82FF8222A3D0300F44244 /* Info.plist */,
 				EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */,
@@ -287,7 +287,7 @@
 				EB1DC667222BCA5100D81180 /* lottie_good_trophy_2.json in Resources */,
 				EB1DC63D222BC3DB00D81180 /* lottie_champagne.json in Resources */,
 				EB1DC645222BC48000D81180 /* lottie_bad_awkward_face.json in Resources */,
-				EB1DC5FB222BA55A00D81180 /* RewardScreens2.storyboard in Resources */,
+				EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */,
 				EB1DC64F222BC53E00D81180 /* lottie_tiny_asian_hearts.json in Resources */,
 				EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */,
 				EB1DC65F222BCA0600D81180 /* lottie_gift_box.json in Resources */,
