@@ -90,6 +90,7 @@
 		EB1DC660222BCA1300D81180 /* lottie_spinny_stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_spinny_stars.json; sourceTree = "<group>"; };
 		EB1DC664222BCA3800D81180 /* lottie_balloons_background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lottie_balloons_background.json; path = ../../../Documents/Lottie/hacktech/lottie_balloons_background.json; sourceTree = "<group>"; };
 		EB1DC666222BCA5100D81180 /* lottie_good_trophy_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_trophy_2.json; sourceTree = "<group>"; };
+		EB1DC66A222BE81400D81180 /* Trophycase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Trophycase.storyboard; path = "/Users/johnlee/GitHub/medication-reminder/medication-reminder/Trophycase.storyboard"; sourceTree = "<absolute>"; };
 		EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableCell.swift; sourceTree = "<group>"; };
 		EBCF9E16222ACB3C006DBFF0 /* Medications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications.swift; sourceTree = "<group>"; };
 		EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRecord.swift; sourceTree = "<group>"; };
@@ -159,15 +160,16 @@
 				17F82FEC222A3D0000F44244 /* AppDelegate.swift */,
 				17F82FEE222A3D0000F44244 /* ViewController.swift */,
 				1768E34C222AD66500979362 /* TableViewController.swift */,
+				EB1DC66A222BE81400D81180 /* Trophycase.storyboard */,
 				17F82FF0222A3D0000F44244 /* Main.storyboard */,
-				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
 				17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */,
+				EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */,
+				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
 				17F82FF8222A3D0300F44244 /* Info.plist */,
 				EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */,
 				EBCF9E16222ACB3C006DBFF0 /* Medications.swift */,
 				EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */,
 				EBCF9E1C222B23CC006DBFF0 /* Medication.swift */,
-				EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */,
 				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
 			);
 			path = "medication-reminder";
