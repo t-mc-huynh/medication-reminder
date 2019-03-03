@@ -22,6 +22,10 @@ import UIKit
         let gradientFive = UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1).cgColor
         let gradientSix = UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1).cgColor
         let gradientSeven = UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1).cgColor
+        
+        
+
+        
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.

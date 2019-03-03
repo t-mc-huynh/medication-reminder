@@ -332,12 +332,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBu-T9-Bva">
-                                <rect key="frame" x="146" y="245" width="46" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIr-Fw-MMg">
+                                <rect key="frame" x="194" y="393" width="42" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-iN-Bt8">
+                                <rect key="frame" x="113" y="181" width="204" height="204.00000000000011"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="logo"/>
                                 <connections>
-                                    <segue destination="5BD-oe-3Cy" kind="presentation" id="Bux-iJ-0yO"/>
+                                    <segue destination="5BD-oe-3Cy" kind="presentation" id="1b0-vP-aCt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -351,12 +358,12 @@
         <!--Item 1-->
         <scene sceneID="yHL-hU-UcQ">
             <objects>
-                <viewController id="5BD-oe-3Cy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="5BD-oe-3Cy" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yqG-6h-t1L"/>
                         <viewControllerLayoutGuide type="bottom" id="mDq-J1-kpU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rqL-eI-Ti1">
+                    <view key="view" contentMode="scaleToFill" id="rqL-eI-Ti1" customClass="SecondViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -411,7 +418,10 @@
             <point key="canvasLocation" x="-1414" y="-629"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="204" height="204"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bux-iJ-0yO"/>
+        <segue reference="1b0-vP-aCt"/>
     </inferredMetricsTieBreakers>
 </document>
