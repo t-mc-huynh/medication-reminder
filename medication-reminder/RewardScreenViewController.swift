@@ -13,7 +13,7 @@ class RewardScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_bad_oh_deer")
+        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_good_avocado")
         
         if animationView != nil {
             animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
@@ -26,7 +26,52 @@ class RewardScreenViewController: UIViewController {
         }
     }
     
-
+    func triggerTrophy() {
+        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_good_trophy_2")
+        
+        if animationView != nil {
+            animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+            animationView.center = self.view.center
+            //            animationView.contentMode = .scaleAspectFill
+            
+            view.addSubview(animationView)
+            animationView.loopAnimation = true
+            animationView.play()
+        }
+    }
+    
+    func triggerDino() {
+        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_good_dino_dance")
+        
+        if animationView != nil {
+            animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+            animationView.center = self.view.center
+            //            animationView.contentMode = .scaleAspectFill
+            
+            view.addSubview(animationView)
+            animationView.loopAnimation = true
+            animationView.play()
+        }
+    }
+    
+    
+    @IBAction func onClickAvocado(_ sender: UIButton) {
+        triggerTrophy()
+    }
+    
+    
+    @IBAction func onClickTrophy(_ sender: UIButton) {
+        triggerDino()
+        // put
+        let twilio: Twilio = Twilio()
+        twilio.displayMessageInterface()
+    }
+    
+    @IBAction func onNavTrophy(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Trophycase", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Trophycase") as UIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -11,10 +11,14 @@ import AVFoundation
 
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    var MOCK_MEDICATION_TUPLES: [(String, [Float], String, String, [String])] = []
-    var EXAMPLE_MEDICATION_RECORDS: [(String, [Float], String, String, [String], String, UIDatePicker, Int)] = []
+   
+    var drug1: MedicationRecord = MedicationRecord(name: "Lorazepam", dose: 0.5, qty: 1, doseType: "MG", doseForm: "TAB", warnings: ["Avoid taking with alcohol", "Can cause drowsiness"], nickname: "Calming Pill", scheduledTime: "13:00", frequency: 1, totalQty: 30, refills:2)
+    var drug2: MedicationRecord = MedicationRecord(name: "Zopiclone",dose:5.0, qty: 1,doseType:"MG", doseForm:"TAB",warnings:["Avoid taking with alcohol"], nickname:"Sleeping Pill", scheduledTime:"22:00", frequency:1, totalQty:30, refills: 2)
+    var drug3: MedicationRecord = MedicationRecord(name:"Escitalopram oxalate (Cipralex)",dose:20, qty:30, doseType:"MG", doseForm:"TAB", warnings:[], nickname:"E", scheduledTime:"07:00",frequency: 1, totalQty: 30, refills:3)
+    
     var medicationsData: Medications = Medications()
     var medicationsList: [Medication] = []
+    var medRecordList: [MedicationRecord] = []
     //    var tableView: UITableView = UITableView()
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "drug_search_cell"
@@ -31,18 +35,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let gradientSix = UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1).cgColor
     let gradientSeven = UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1).cgColor
 
-    //MARK: properties
-    //        @IBOutlet var tableView: UITableView!
-    //    @IBAction func drugSearchInput(_ sender: UITextField) {
-    //        print("here1")
-    //    }
-    //
-    
-//    @IBAction func splashScreenButton(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
-//        present(vc, animated: true, completion: nil)
-//    }
     @IBOutlet weak var drugSearchTable: UITableView!
     @IBOutlet weak var medRecordTable: UITableView!
     @IBOutlet weak var drugSearchField: UITextField!
@@ -129,10 +121,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @objc func demoFunction() {
         nameLabel.text = "Lorazepam"
         nicknameLabel.text = "Calming pill"
-        doseLabel.text = "0.06"
+        doseLabel.text = "0.6"
         freqLabel.text = "1"
-        refillLabel.text = "0"
-        qtyLabel.text = "10"
+        refillLabel.text = "2"
+        qtyLabel.text = "1"
         totalQtyLabel.text = "10"
         missedDoseLabel.text = "2"
     }
@@ -195,8 +187,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     @IBAction func saveAndSubmit(_ sender: UIButton) {
-        
-    }
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+            let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen1") as UIViewController
+            self.present(vc, animated: true, completion: nil)
+            print("hello")
+        })
+     }
+    
     
 }
 

@@ -21,7 +21,8 @@ MFMessageComposeViewControllerDelegate {
         let composeVC = MFMessageComposeViewController()
         composeVC.messageComposeDelegate = self
         
-        composeVC.recipients = ["3142026521"]
+//        composeVC.recipients = ["3142026521"]
+          composeVC.recipients = ["3234494226"]
         composeVC.body = "Message delivered"
         
         if MFMessageComposeViewController.canSendText() {
