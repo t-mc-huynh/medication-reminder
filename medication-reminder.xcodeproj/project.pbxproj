@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1768E34D222AD66500979362 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768E34C222AD66500979362 /* TableViewController.swift */; };
+		17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEC222A3D0000F44244 /* AppDelegate.swift */; };
+		17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F82FEE222A3D0000F44244 /* ViewController.swift */; };
+		17F82FF2222A3D0000F44244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF0222A3D0000F44244 /* Main.storyboard */; };
+		17F82FF4222A3D0300F44244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF3222A3D0300F44244 /* Assets.xcassets */; };
+		17F82FF7222A3D0300F44244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */; };
+		406926C989B1C3B18CEC89EA /* Pods_medication_reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */; };
+		BE7304E0222BCE7800F9CAB1 /* Trophycase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7304DF222BCE7800F9CAB1 /* Trophycase.swift */; };
+		BE7304E2222BCF5800F9CAB1 /* Twilio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7304E1222BCF5800F9CAB1 /* Twilio.swift */; };
+		BE7304E6222BCF9C00F9CAB1 /* TwilioChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7304E5222BCF9B00F9CAB1 /* TwilioChat.swift */; };
+		BE7304E8222BCFFD00F9CAB1 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7304E7222BCFFD00F9CAB1 /* SpeechSynthesizer.swift */; };
+		BE7304EC222BD22F00F9CAB1 /* Trophycase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7304EB222BD22F00F9CAB1 /* Trophycase.storyboard */; };
+		BE7304EE222BD4A700F9CAB1 /* TrophyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7304ED222BD4A700F9CAB1 /* TrophyController.swift */; };
+		EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */; };
+		EB1DC629222BB82400D81180 /* RewardScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */; };
+		EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */; };
+		EB1DC62D222BBDD400D81180 /* lottie_archery_target_achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */; };
+		EB1DC62F222BBDE700D81180 /* lottie_good_avocado.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62E222BBDE700D81180 /* lottie_good_avocado.json */; };
+		EB1DC633222BC30200D81180 /* lottie_great_work.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC632222BC30200D81180 /* lottie_great_work.json */; };
+		EB1DC637222BC37300D81180 /* lottie_smile_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC636222BC37300D81180 /* lottie_smile_dark.json */; };
+		EB1DC639222BC38400D81180 /* lottie_good_beary_good_job.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC638222BC38300D81180 /* lottie_good_beary_good_job.json */; };
+		EB1DC63B222BC3CB00D81180 /* lottie_heart.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC63A222BC3CB00D81180 /* lottie_heart.json */; };
+		EB1DC63D222BC3DB00D81180 /* lottie_champagne.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC63C222BC3DA00D81180 /* lottie_champagne.json */; };
+		EB1DC63F222BC3EE00D81180 /* lottie_checkmark.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC63E222BC3ED00D81180 /* lottie_checkmark.json */; };
+		EB1DC641222BC40100D81180 /* lottie_heart_like.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC640222BC40100D81180 /* lottie_heart_like.json */; };
+		EB1DC645222BC48000D81180 /* lottie_bad_awkward_face.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC644222BC48000D81180 /* lottie_bad_awkward_face.json */; };
+		EB1DC647222BC4EB00D81180 /* lottie_bad_birdie.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC646222BC4EB00D81180 /* lottie_bad_birdie.json */; };
+		EB1DC649222BC4FB00D81180 /* lottie_lama_cool.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC648222BC4FB00D81180 /* lottie_lama_cool.json */; };
+		EB1DC64D222BC52F00D81180 /* lottie_ufo.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC64C222BC52F00D81180 /* lottie_ufo.json */; };
+		EB1DC64F222BC53E00D81180 /* lottie_tiny_asian_hearts.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC64E222BC53E00D81180 /* lottie_tiny_asian_hearts.json */; };
+		EB1DC651222BC54F00D81180 /* lottie_high_five.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC650222BC54F00D81180 /* lottie_high_five.json */; };
+		EB1DC653222BC55D00D81180 /* lottie_star_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC652222BC55D00D81180 /* lottie_star_dark.json */; };
+		EB1DC655222BC9B300D81180 /* lottie_emoji_tongue.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC654222BC9B300D81180 /* lottie_emoji_tongue.json */; };
+		EB1DC657222BC9CD00D81180 /* lottie_heart_particles.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC656222BC9CD00D81180 /* lottie_heart_particles.json */; };
+		EB1DC659222BC9DE00D81180 /* lottie_good_dino_dance.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC658222BC9DE00D81180 /* lottie_good_dino_dance.json */; };
+		EB1DC65B222BC9EF00D81180 /* lottie_emoji_shock.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC65A222BC9EF00D81180 /* lottie_emoji_shock.json */; };
+		EB1DC65D222BC9FA00D81180 /* lottie_bad_sad_worm.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC65C222BC9FA00D81180 /* lottie_bad_sad_worm.json */; };
+		EB1DC65F222BCA0600D81180 /* lottie_gift_box.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC65E222BCA0600D81180 /* lottie_gift_box.json */; };
+		EB1DC661222BCA1300D81180 /* lottie_spinny_stars.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC660222BCA1300D81180 /* lottie_spinny_stars.json */; };
+		EB1DC667222BCA5100D81180 /* lottie_good_trophy_2.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC666222BCA5100D81180 /* lottie_good_trophy_2.json */; };
+		EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */; };
+		EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E16222ACB3C006DBFF0 /* Medications.swift */; };
+		EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */; };
+		EBCF9E1D222B23CC006DBFF0 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1C222B23CC006DBFF0 /* Medication.swift */; };
+		EBCF9E1F222B3D60006DBFF0 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */; };
+		EBCF9E21222B3DC2006DBFF0 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */; };
+		EBCF9E23222B3DF3006DBFF0 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */; };
+		EBCF9E25222B3E22006DBFF0 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E24222B3E22006DBFF0 /* PastelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1768E34C222AD66500979362 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		17F82FE9222A3D0000F44244 /* medication-reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medication-reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F82FEC222A3D0000F44244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17F82FEE222A3D0000F44244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17F82FF1222A3D0000F44244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17F82FF3222A3D0300F44244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17F82FF6222A3D0300F44244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17F82FF8222A3D0300F44244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAD49CC6DAE78C4DF5BCB5F /* Pods-medication-reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.debug.xcconfig"; path = "Target Support Files/Pods-medication-reminder/Pods-medication-reminder.debug.xcconfig"; sourceTree = "<group>"; };
+		74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medication_reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FF79A25BA65B56ADAA6D80 /* Pods-medication-reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.release.xcconfig"; path = "Target Support Files/Pods-medication-reminder/Pods-medication-reminder.release.xcconfig"; sourceTree = "<group>"; };
+		BE7304DF222BCE7800F9CAB1 /* Trophycase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trophycase.swift; path = ../../../Documents/Trophycase.swift; sourceTree = "<group>"; };
+		BE7304E1222BCF5800F9CAB1 /* Twilio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Twilio.swift; path = ../../../Documents/twilio/Twilio.swift; sourceTree = "<group>"; };
+		BE7304E5222BCF9B00F9CAB1 /* TwilioChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioChat.swift; sourceTree = "<group>"; };
+		BE7304E7222BCFFD00F9CAB1 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeechSynthesizer.swift; path = ../../SpeechSynthesizer/SpeechSynthesizer/SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		BE7304EB222BD22F00F9CAB1 /* Trophycase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Trophycase.storyboard; path = ../../../Documents/Trophycase.storyboard; sourceTree = "<group>"; };
+		BE7304ED222BD4A700F9CAB1 /* TrophyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyController.swift; sourceTree = "<group>"; };
+		EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardScreens.storyboard; sourceTree = "<group>"; };
+		EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreenViewController.swift; sourceTree = "<group>"; };
+		EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_whale_whale_whale.json; sourceTree = "<group>"; };
+		EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_archery_target_achieved.json; sourceTree = "<group>"; };
+		EB1DC62E222BBDE700D81180 /* lottie_good_avocado.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_avocado.json; sourceTree = "<group>"; };
+		EB1DC632222BC30200D81180 /* lottie_great_work.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_great_work.json; sourceTree = "<group>"; };
+		EB1DC636222BC37300D81180 /* lottie_smile_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_smile_dark.json; sourceTree = "<group>"; };
+		EB1DC638222BC38300D81180 /* lottie_good_beary_good_job.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_beary_good_job.json; sourceTree = "<group>"; };
+		EB1DC63A222BC3CB00D81180 /* lottie_heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_heart.json; sourceTree = "<group>"; };
+		EB1DC63C222BC3DA00D81180 /* lottie_champagne.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_champagne.json; sourceTree = "<group>"; };
+		EB1DC63E222BC3ED00D81180 /* lottie_checkmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_checkmark.json; sourceTree = "<group>"; };
+		EB1DC640222BC40100D81180 /* lottie_heart_like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_heart_like.json; sourceTree = "<group>"; };
+		EB1DC644222BC48000D81180 /* lottie_bad_awkward_face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_awkward_face.json; sourceTree = "<group>"; };
+		EB1DC646222BC4EB00D81180 /* lottie_bad_birdie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_birdie.json; sourceTree = "<group>"; };
+		EB1DC648222BC4FB00D81180 /* lottie_lama_cool.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_lama_cool.json; sourceTree = "<group>"; };
+		EB1DC64C222BC52F00D81180 /* lottie_ufo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_ufo.json; sourceTree = "<group>"; };
+		EB1DC64E222BC53E00D81180 /* lottie_tiny_asian_hearts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_tiny_asian_hearts.json; sourceTree = "<group>"; };
+		EB1DC650222BC54F00D81180 /* lottie_high_five.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_high_five.json; sourceTree = "<group>"; };
+		EB1DC652222BC55D00D81180 /* lottie_star_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_star_dark.json; sourceTree = "<group>"; };
+		EB1DC654222BC9B300D81180 /* lottie_emoji_tongue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_emoji_tongue.json; sourceTree = "<group>"; };
+		EB1DC656222BC9CD00D81180 /* lottie_heart_particles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_heart_particles.json; sourceTree = "<group>"; };
+		EB1DC658222BC9DE00D81180 /* lottie_good_dino_dance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_dino_dance.json; sourceTree = "<group>"; };
+		EB1DC65A222BC9EF00D81180 /* lottie_emoji_shock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_emoji_shock.json; sourceTree = "<group>"; };
+		EB1DC65C222BC9FA00D81180 /* lottie_bad_sad_worm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_sad_worm.json; sourceTree = "<group>"; };
+		EB1DC65E222BCA0600D81180 /* lottie_gift_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_gift_box.json; sourceTree = "<group>"; };
+		EB1DC660222BCA1300D81180 /* lottie_spinny_stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_spinny_stars.json; sourceTree = "<group>"; };
+		EB1DC666222BCA5100D81180 /* lottie_good_trophy_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_trophy_2.json; sourceTree = "<group>"; };
+		EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableCell.swift; sourceTree = "<group>"; };
+		EBCF9E16222ACB3C006DBFF0 /* Medications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications.swift; sourceTree = "<group>"; };
+		EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRecord.swift; sourceTree = "<group>"; };
+		EBCF9E1C222B23CC006DBFF0 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelGradient.swift; sourceTree = "<group>"; };
+		EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelLabel.swift; sourceTree = "<group>"; };
+		EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelPoint.swift; sourceTree = "<group>"; };
+		EBCF9E24222B3E22006DBFF0 /* PastelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17F82FE6222A3D0000F44244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406926C989B1C3B18CEC89EA /* Pods_medication_reminder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17F82FE0222A3D0000F44244 = {
+			isa = PBXGroup;
+			children = (
+				17F82FEB222A3D0000F44244 /* medication-reminder */,
+				17F82FEA222A3D0000F44244 /* Products */,
+				4147E4B1342D7715D091BDDE /* Pods */,
+				EB2D9568D7CFEE2923332E29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17F82FEA222A3D0000F44244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17F82FE9222A3D0000F44244 /* medication-reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17F82FEB222A3D0000F44244 /* medication-reminder */ = {
+			isa = PBXGroup;
+			children = (
+				BE7304EB222BD22F00F9CAB1 /* Trophycase.storyboard */,
+				BE7304E7222BCFFD00F9CAB1 /* SpeechSynthesizer.swift */,
+				BE7304E5222BCF9B00F9CAB1 /* TwilioChat.swift */,
+				BE7304E1222BCF5800F9CAB1 /* Twilio.swift */,
+				BE7304DF222BCE7800F9CAB1 /* Trophycase.swift */,
+				EB1DC62E222BBDE700D81180 /* lottie_good_avocado.json */,
+				BE7304ED222BD4A700F9CAB1 /* TrophyController.swift */,
+				EB1DC666222BCA5100D81180 /* lottie_good_trophy_2.json */,
+				EB1DC638222BC38300D81180 /* lottie_good_beary_good_job.json */,
+				EB1DC658222BC9DE00D81180 /* lottie_good_dino_dance.json */,
+				EB1DC644222BC48000D81180 /* lottie_bad_awkward_face.json */,
+				EB1DC646222BC4EB00D81180 /* lottie_bad_birdie.json */,
+				EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */,
+				EB1DC65C222BC9FA00D81180 /* lottie_bad_sad_worm.json */,
+				EB1DC636222BC37300D81180 /* lottie_smile_dark.json */,
+				EB1DC654222BC9B300D81180 /* lottie_emoji_tongue.json */,
+				EB1DC660222BCA1300D81180 /* lottie_spinny_stars.json */,
+				EB1DC65E222BCA0600D81180 /* lottie_gift_box.json */,
+				EB1DC65A222BC9EF00D81180 /* lottie_emoji_shock.json */,
+				EB1DC64C222BC52F00D81180 /* lottie_ufo.json */,
+				EB1DC63A222BC3CB00D81180 /* lottie_heart.json */,
+				EB1DC640222BC40100D81180 /* lottie_heart_like.json */,
+				EB1DC656222BC9CD00D81180 /* lottie_heart_particles.json */,
+				EB1DC63C222BC3DA00D81180 /* lottie_champagne.json */,
+				EB1DC63E222BC3ED00D81180 /* lottie_checkmark.json */,
+				EB1DC650222BC54F00D81180 /* lottie_high_five.json */,
+				EB1DC632222BC30200D81180 /* lottie_great_work.json */,
+				EB1DC652222BC55D00D81180 /* lottie_star_dark.json */,
+				EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */,
+				EB1DC64E222BC53E00D81180 /* lottie_tiny_asian_hearts.json */,
+				EB1DC648222BC4FB00D81180 /* lottie_lama_cool.json */,
+				17F82FEC222A3D0000F44244 /* AppDelegate.swift */,
+				17F82FEE222A3D0000F44244 /* ViewController.swift */,
+				1768E34C222AD66500979362 /* TableViewController.swift */,
+				17F82FF0222A3D0000F44244 /* Main.storyboard */,
+				17F82FF3222A3D0300F44244 /* Assets.xcassets */,
+				17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */,
+				17F82FF8222A3D0300F44244 /* Info.plist */,
+				EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */,
+				EBCF9E16222ACB3C006DBFF0 /* Medications.swift */,
+				EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */,
+				EBCF9E1C222B23CC006DBFF0 /* Medication.swift */,
+				EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */,
+				EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */,
+				EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */,
+				EBCF9E24222B3E22006DBFF0 /* PastelView.swift */,
+				EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */,
+				EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */,
+			);
+			path = "medication-reminder";
+			sourceTree = "<group>";
+		};
+		4147E4B1342D7715D091BDDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD49CC6DAE78C4DF5BCB5F /* Pods-medication-reminder.debug.xcconfig */,
+				83FF79A25BA65B56ADAA6D80 /* Pods-medication-reminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB2D9568D7CFEE2923332E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17F82FE8222A3D0000F44244 /* medication-reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F82FFB222A3D0300F44244 /* Build configuration list for PBXNativeTarget "medication-reminder" */;
+			buildPhases = (
+				AC17187595A0029F12765053 /* [CP] Check Pods Manifest.lock */,
+				17F82FE5222A3D0000F44244 /* Sources */,
+				17F82FE6222A3D0000F44244 /* Frameworks */,
+				17F82FE7222A3D0000F44244 /* Resources */,
+				9A28093FE4D69DA07C1223A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "medication-reminder";
+			productName = "medication-reminder";
+			productReference = 17F82FE9222A3D0000F44244 /* medication-reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17F82FE1222A3D0000F44244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tina Huynh";
+				TargetAttributes = {
+					17F82FE8222A3D0000F44244 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 17F82FE4222A3D0000F44244 /* Build configuration list for PBXProject "medication-reminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17F82FE0222A3D0000F44244;
+			productRefGroup = 17F82FEA222A3D0000F44244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17F82FE8222A3D0000F44244 /* medication-reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17F82FE7222A3D0000F44244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1DC639222BC38400D81180 /* lottie_good_beary_good_job.json in Resources */,
+				EB1DC653222BC55D00D81180 /* lottie_star_dark.json in Resources */,
+				EB1DC637222BC37300D81180 /* lottie_smile_dark.json in Resources */,
+				EB1DC63B222BC3CB00D81180 /* lottie_heart.json in Resources */,
+				EB1DC63F222BC3EE00D81180 /* lottie_checkmark.json in Resources */,
+				17F82FF7222A3D0300F44244 /* LaunchScreen.storyboard in Resources */,
+				EB1DC657222BC9CD00D81180 /* lottie_heart_particles.json in Resources */,
+				17F82FF4222A3D0300F44244 /* Assets.xcassets in Resources */,
+				EB1DC62D222BBDD400D81180 /* lottie_archery_target_achieved.json in Resources */,
+				EB1DC65B222BC9EF00D81180 /* lottie_emoji_shock.json in Resources */,
+				EB1DC655222BC9B300D81180 /* lottie_emoji_tongue.json in Resources */,
+				17F82FF2222A3D0000F44244 /* Main.storyboard in Resources */,
+				EB1DC633222BC30200D81180 /* lottie_great_work.json in Resources */,
+				BE7304EC222BD22F00F9CAB1 /* Trophycase.storyboard in Resources */,
+				EB1DC661222BCA1300D81180 /* lottie_spinny_stars.json in Resources */,
+				EB1DC649222BC4FB00D81180 /* lottie_lama_cool.json in Resources */,
+				EB1DC667222BCA5100D81180 /* lottie_good_trophy_2.json in Resources */,
+				EB1DC63D222BC3DB00D81180 /* lottie_champagne.json in Resources */,
+				EB1DC645222BC48000D81180 /* lottie_bad_awkward_face.json in Resources */,
+				EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */,
+				EB1DC64F222BC53E00D81180 /* lottie_tiny_asian_hearts.json in Resources */,
+				EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */,
+				EB1DC65F222BCA0600D81180 /* lottie_gift_box.json in Resources */,
+				EB1DC651222BC54F00D81180 /* lottie_high_five.json in Resources */,
+				EB1DC647222BC4EB00D81180 /* lottie_bad_birdie.json in Resources */,
+				EB1DC65D222BC9FA00D81180 /* lottie_bad_sad_worm.json in Resources */,
+				EB1DC62F222BBDE700D81180 /* lottie_good_avocado.json in Resources */,
+				EB1DC659222BC9DE00D81180 /* lottie_good_dino_dance.json in Resources */,
+				EB1DC641222BC40100D81180 /* lottie_heart_like.json in Resources */,
+				EB1DC64D222BC52F00D81180 /* lottie_ufo.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A28093FE4D69DA07C1223A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medication-reminder/Pods-medication-reminder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medication-reminder/Pods-medication-reminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC17187595A0029F12765053 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medication-reminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17F82FE5222A3D0000F44244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7304E6222BCF9C00F9CAB1 /* TwilioChat.swift in Sources */,
+				EBCF9E23222B3DF3006DBFF0 /* PastelPoint.swift in Sources */,
+				EBCF9E1D222B23CC006DBFF0 /* Medication.swift in Sources */,
+				EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */,
+				BE7304E0222BCE7800F9CAB1 /* Trophycase.swift in Sources */,
+				17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */,
+				EB1DC629222BB82400D81180 /* RewardScreenViewController.swift in Sources */,
+				EBCF9E21222B3DC2006DBFF0 /* PastelLabel.swift in Sources */,
+				EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */,
+				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
+				1768E34D222AD66500979362 /* TableViewController.swift in Sources */,
+				BE7304EE222BD4A700F9CAB1 /* TrophyController.swift in Sources */,
+				BE7304E8222BCFFD00F9CAB1 /* SpeechSynthesizer.swift in Sources */,
+				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
+				17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */,
+				EBCF9E1F222B3D60006DBFF0 /* PastelGradient.swift in Sources */,
+				EBCF9E25222B3E22006DBFF0 /* PastelView.swift in Sources */,
+				BE7304E2222BCF5800F9CAB1 /* Twilio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17F82FF0222A3D0000F44244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F82FF1222A3D0000F44244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17F82FF5222A3D0300F44244 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F82FF6222A3D0300F44244 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17F82FF9222A3D0300F44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17F82FFA222A3D0300F44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17F82FFC222A3D0300F44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAD49CC6DAE78C4DF5BCB5F /* Pods-medication-reminder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MWUKS7VR4;
+				INFOPLIST_FILE = "medication-reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Programming.medication-reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17F82FFD222A3D0300F44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FF79A25BA65B56ADAA6D80 /* Pods-medication-reminder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MWUKS7VR4;
+				INFOPLIST_FILE = "medication-reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Programming.medication-reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17F82FE4222A3D0000F44244 /* Build configuration list for PBXProject "medication-reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F82FF9222A3D0300F44244 /* Debug */,
+				17F82FFA222A3D0300F44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F82FFB222A3D0300F44244 /* Build configuration list for PBXNativeTarget "medication-reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F82FFC222A3D0300F44244 /* Debug */,
+				17F82FFD222A3D0300F44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17F82FE1222A3D0000F44244 /* Project object */;
+}
