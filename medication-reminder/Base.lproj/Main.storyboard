@@ -106,7 +106,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-G6-SUn">
-                                        <rect key="frame" x="16" y="577" width="76" height="30"/>
+                                        <rect key="frame" x="16" y="577" width="109" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UX-t8-wK0">
@@ -119,8 +119,16 @@
                                                     <segue destination="XUU-bT-T0j" kind="show" id="eDe-gw-ALf"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXi-6b-KOB">
+                                                <rect key="frame" x="37" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="List"/>
+                                                <connections>
+                                                    <segue destination="q3T-iT-5m8" kind="show" id="qHA-PH-2SC"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL2-sT-z83">
-                                                <rect key="frame" x="37" y="0.0" width="39" height="30"/>
+                                                <rect key="frame" x="70" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="Lottie">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
@@ -979,6 +987,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eDe-gw-ALf"/>
+        <segue reference="sZS-Px-fCY"/>
         <segue reference="kH5-q5-4IX"/>
     </inferredMetricsTieBreakers>
 </document>
