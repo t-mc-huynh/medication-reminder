@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var drugSearchTable: UITableView!
     @IBOutlet weak var medRecordTable: UITableView!
     @IBOutlet weak var drugSearchField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,6 +66,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+    }
+    
+
+    @IBAction func lottieDemoClick(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
+        present(vc, animated: true, completion: nil)
     }
     
 //    @IBAction func drugSearchField(_ sender: UITextField) {
