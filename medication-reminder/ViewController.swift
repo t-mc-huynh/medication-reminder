@@ -181,18 +181,27 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func lottieDemoClick(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
-        present(vc, animated: true, completion: nil)
-    }
-
-    @IBAction func saveAndSubmit(_ sender: UIButton) {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
             let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen1") as UIViewController
             self.present(vc, animated: true, completion: nil)
-            print("hello")
+//
+//            let storyboard = UIStoryboard(name: "PenaltyScreens", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "PenaltyScreen2") as UIViewController
+//            tree.present(vc, animated: true, completion: nil)
         })
+    }
+
+    @IBAction func saveAndSubmit(_ sender: UIButton) {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+//            let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
+//            self.present(vc, animated: true, completion: nil)
+//
+//            let storyboard = UIStoryboard(name: "RewardScreens", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "RewardScreen") as UIViewController
+//            self.present(vc, animated: true, completion: nil)
+//        })
      }
     
     

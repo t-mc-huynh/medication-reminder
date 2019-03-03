@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYP-QT-5sv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Penalty Screen View Controller-->
+        <!--PenaltyScreen1-->
         <scene sceneID="me3-eG-nCe">
             <objects>
-                <viewController storyboardIdentifier="PenaltyScreen1" modalTransitionStyle="crossDissolve" id="uYP-QT-5sv" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PenaltyScreen1" title="PenaltyScreen1" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uYP-QT-5sv" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9w-c3-M9W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NBv-WQ-Z3T" kind="show" id="Ih1-KV-eRb"/>
+                                    <segue destination="NBv-WQ-Z3T" kind="presentation" id="g11-9i-9S1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well, that's awkward..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-Ac-HaN">
@@ -68,12 +68,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2S-aN-UAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127.2" y="88.605697151424295"/>
+            <point key="canvasLocation" x="-319" y="89"/>
         </scene>
-        <!--Penalty Screen View Controller-->
+        <!--PenaltyScreen2-->
         <scene sceneID="1ae-1q-UXh">
             <objects>
-                <viewController storyboardIdentifier="PenaltyScreen2" modalTransitionStyle="crossDissolve" id="NBv-WQ-Z3T" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PenaltyScreen2" title="PenaltyScreen2" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NBv-WQ-Z3T" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M25-Py-3aZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onClickAvocado:" destination="NBv-WQ-Z3T" eventType="touchUpInside" id="teJ-1U-3b0"/>
-                                    <segue destination="ud2-7K-SFG" kind="show" id="vlC-TE-5Oa"/>
+                                    <segue destination="ud2-7K-SFG" kind="presentation" id="92k-YQ-0Su"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whale, whale, whale... what do we have here?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68x-cG-0dR">
@@ -103,11 +103,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-eV-MQo">
-                                <rect key="frame" x="36" y="378" width="303" height="155"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="yDp-wd-9iK"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-eV-MQo">
+                                <rect key="frame" x="36" y="395" width="303" height="130"/>
                                 <string key="text">It's important to remember to take your medications regularly.  Having trouble remembering? Having side effects? Give your pharmacy a call!</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,8 +127,8 @@
                             <constraint firstItem="wSQ-Cl-UJy" firstAttribute="trailing" secondItem="68x-cG-0dR" secondAttribute="trailing" constant="36" id="IW0-lD-7GL"/>
                             <constraint firstItem="wSQ-Cl-UJy" firstAttribute="bottom" secondItem="s2R-xp-0nb" secondAttribute="bottom" constant="78" id="JbJ-pb-f6P"/>
                             <constraint firstItem="s2R-xp-0nb" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="S5z-hO-pvD"/>
-                            <constraint firstItem="s2R-xp-0nb" firstAttribute="top" secondItem="pAy-eV-MQo" secondAttribute="bottom" constant="36" id="ePC-oN-Cjc"/>
-                            <constraint firstItem="pAy-eV-MQo" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="gez-56-9ko"/>
+                            <constraint firstItem="pAy-eV-MQo" firstAttribute="leading" secondItem="wSQ-Cl-UJy" secondAttribute="leading" constant="36" id="UAV-eD-AkI"/>
+                            <constraint firstItem="s2R-xp-0nb" firstAttribute="top" secondItem="pAy-eV-MQo" secondAttribute="bottom" constant="16" id="irC-W8-MD3"/>
                             <constraint firstItem="68x-cG-0dR" firstAttribute="top" secondItem="wSQ-Cl-UJy" secondAttribute="top" constant="56" id="tGs-bt-lVs"/>
                             <constraint firstItem="wSQ-Cl-UJy" firstAttribute="trailing" secondItem="s2R-xp-0nb" secondAttribute="trailing" constant="36" id="tw0-cK-vQH"/>
                         </constraints>
@@ -140,12 +137,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAo-8H-ltj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="88.605697151424295"/>
+            <point key="canvasLocation" x="433" y="89"/>
         </scene>
-        <!--Penalty Screen View Controller-->
+        <!--PenaltyScreen3-->
         <scene sceneID="f9u-b1-TSK">
             <objects>
-                <viewController storyboardIdentifier="PenaltyScreen3" modalTransitionStyle="crossDissolve" id="ud2-7K-SFG" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PenaltyScreen3" title="PenaltyScreen3" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ud2-7K-SFG" customClass="PenaltyScreenViewController" customModule="medication_reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNK-fa-O2V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,9 +173,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66g-dN-C0b">
                                 <rect key="frame" x="36" y="378" width="303" height="155"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="0Am-Uj-uxA"/>
-                                </constraints>
                                 <string key="text">It's been a month since you first started, and we wanted to know if you were improving!  Answer a few questions, and we'll send the results to your doctor.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

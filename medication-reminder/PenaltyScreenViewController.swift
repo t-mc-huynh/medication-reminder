@@ -14,10 +14,10 @@ class PenaltyScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_bad_awkward_face")
+        let animationView: LOTAnimationView! = LOTAnimationView(name: "whale_whale")
         
         if animationView != nil {
-            animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+            animationView.frame = CGRect(x: 0, y: -100, width: 400, height: 400)
             animationView.center = self.view.center
             //            animationView.contentMode = .scaleAspectFill
             
@@ -31,10 +31,10 @@ class PenaltyScreenViewController: UIViewController {
     }
     
     func onAwkwardClick() {
-        let animationView: LOTAnimationView! = LOTAnimationView(name: "lottie_bad_whale_whale_whale")
+        let animationView: LOTAnimationView! = LOTAnimationView(name: "whale_whale")
         
         if animationView != nil {
-            animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+            animationView.frame = CGRect(x: 0, y: -100, width: 400, height: 400)
             animationView.center = self.view.center
             //            animationView.contentMode = .scaleAspectFill
             

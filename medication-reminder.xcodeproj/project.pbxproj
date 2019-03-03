@@ -18,7 +18,6 @@
 		406926C989B1C3B18CEC89EA /* Pods_medication_reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AD93768D7BD4E5CFB1A6AC /* Pods_medication_reminder.framework */; };
 		EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */; };
 		EB1DC629222BB82400D81180 /* RewardScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */; };
-		EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */; };
 		EB1DC62D222BBDD400D81180 /* lottie_archery_target_achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */; };
 		EB1DC62F222BBDE700D81180 /* lottie_good_avocado.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC62E222BBDE700D81180 /* lottie_good_avocado.json */; };
 		EB1DC633222BC30200D81180 /* lottie_great_work.json in Resources */ = {isa = PBXBuildFile; fileRef = EB1DC632222BC30200D81180 /* lottie_great_work.json */; };
@@ -49,6 +48,7 @@
 		EBA20E2C222C0DD30052D812 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA20E2B222C0DD30052D812 /* SpeechSynthesizer.swift */; };
 		EBA20E2E222C0DEA0052D812 /* TrophyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA20E2D222C0DEA0052D812 /* TrophyController.swift */; };
 		EBA20E30222C0E780052D812 /* Twilio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA20E2F222C0E780052D812 /* Twilio.swift */; };
+		EBA20E32222C277B0052D812 /* whale_whale.json in Resources */ = {isa = PBXBuildFile; fileRef = EBA20E31222C277B0052D812 /* whale_whale.json */; };
 		EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */; };
 		EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E16222ACB3C006DBFF0 /* Medications.swift */; };
 		EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */; };
@@ -72,7 +72,6 @@
 		83FF79A25BA65B56ADAA6D80 /* Pods-medication-reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.release.xcconfig"; path = "Target Support Files/Pods-medication-reminder/Pods-medication-reminder.release.xcconfig"; sourceTree = "<group>"; };
 		EB1DC5FA222BA55A00D81180 /* RewardScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardScreens.storyboard; sourceTree = "<group>"; };
 		EB1DC625222BAF3700D81180 /* RewardScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreenViewController.swift; sourceTree = "<group>"; };
-		EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_bad_whale_whale_whale.json; sourceTree = "<group>"; };
 		EB1DC62C222BBDD400D81180 /* lottie_archery_target_achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_archery_target_achieved.json; sourceTree = "<group>"; };
 		EB1DC62E222BBDE700D81180 /* lottie_good_avocado.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_good_avocado.json; sourceTree = "<group>"; };
 		EB1DC632222BC30200D81180 /* lottie_great_work.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_great_work.json; sourceTree = "<group>"; };
@@ -104,6 +103,7 @@
 		EBA20E2B222C0DD30052D812 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeechSynthesizer.swift; path = ../../../Downloads/SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		EBA20E2D222C0DEA0052D812 /* TrophyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyController.swift; sourceTree = "<group>"; };
 		EBA20E2F222C0E780052D812 /* Twilio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twilio.swift; sourceTree = "<group>"; };
+		EBA20E31222C277B0052D812 /* whale_whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whale_whale.json; sourceTree = "<group>"; };
 		EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableCell.swift; sourceTree = "<group>"; };
 		EBCF9E16222ACB3C006DBFF0 /* Medications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications.swift; sourceTree = "<group>"; };
 		EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRecord.swift; sourceTree = "<group>"; };
@@ -144,6 +144,7 @@
 		17F82FEB222A3D0000F44244 /* medication-reminder */ = {
 			isa = PBXGroup;
 			children = (
+				EBA20E31222C277B0052D812 /* whale_whale.json */,
 				EBA20E2D222C0DEA0052D812 /* TrophyController.swift */,
 				EBA20E2B222C0DD30052D812 /* SpeechSynthesizer.swift */,
 				EBA20E29222C0DBB0052D812 /* TwilioChat.swift */,
@@ -153,7 +154,6 @@
 				EB1DC658222BC9DE00D81180 /* lottie_good_dino_dance.json */,
 				EB1DC644222BC48000D81180 /* lottie_bad_awkward_face.json */,
 				EB1DC646222BC4EB00D81180 /* lottie_bad_birdie.json */,
-				EB1DC62A222BBB1500D81180 /* lottie_bad_whale_whale_whale.json */,
 				EB1DC65C222BC9FA00D81180 /* lottie_bad_sad_worm.json */,
 				EB1DC636222BC37300D81180 /* lottie_smile_dark.json */,
 				EB1DC654222BC9B300D81180 /* lottie_emoji_tongue.json */,
@@ -296,10 +296,10 @@
 				EB1DC645222BC48000D81180 /* lottie_bad_awkward_face.json in Resources */,
 				EB1DC5FB222BA55A00D81180 /* RewardScreens.storyboard in Resources */,
 				EB1DC64F222BC53E00D81180 /* lottie_tiny_asian_hearts.json in Resources */,
-				EB1DC62B222BBB1500D81180 /* lottie_bad_whale_whale_whale.json in Resources */,
 				EB1DC65F222BCA0600D81180 /* lottie_gift_box.json in Resources */,
 				EB1DC651222BC54F00D81180 /* lottie_high_five.json in Resources */,
 				EB1DC647222BC4EB00D81180 /* lottie_bad_birdie.json in Resources */,
+				EBA20E32222C277B0052D812 /* whale_whale.json in Resources */,
 				EB1DC65D222BC9FA00D81180 /* lottie_bad_sad_worm.json in Resources */,
 				EB1DC62F222BBDE700D81180 /* lottie_good_avocado.json in Resources */,
 				EB1DC659222BC9DE00D81180 /* lottie_good_dino_dance.json in Resources */,
