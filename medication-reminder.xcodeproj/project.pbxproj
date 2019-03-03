@@ -16,6 +16,11 @@
 		EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */; };
 		EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E16222ACB3C006DBFF0 /* Medications.swift */; };
 		EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */; };
+		EBCF9E1D222B23CC006DBFF0 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1C222B23CC006DBFF0 /* Medication.swift */; };
+		EBCF9E1F222B3D60006DBFF0 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */; };
+		EBCF9E21222B3DC2006DBFF0 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */; };
+		EBCF9E23222B3DF3006DBFF0 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */; };
+		EBCF9E25222B3E22006DBFF0 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9E24222B3E22006DBFF0 /* PastelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableCell.swift; sourceTree = "<group>"; };
 		EBCF9E16222ACB3C006DBFF0 /* Medications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications.swift; sourceTree = "<group>"; };
 		EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationRecord.swift; sourceTree = "<group>"; };
+		EBCF9E1C222B23CC006DBFF0 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelGradient.swift; sourceTree = "<group>"; };
+		EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelLabel.swift; sourceTree = "<group>"; };
+		EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelPoint.swift; sourceTree = "<group>"; };
+		EBCF9E24222B3E22006DBFF0 /* PastelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 				EBCF9E12222AA76F006DBFF0 /* MedicationTableCell.swift */,
 				EBCF9E16222ACB3C006DBFF0 /* Medications.swift */,
 				EBCF9E1A222AFD91006DBFF0 /* MedicationRecord.swift */,
+				EBCF9E1C222B23CC006DBFF0 /* Medication.swift */,
+				EBCF9E1E222B3D60006DBFF0 /* PastelGradient.swift */,
+				EBCF9E20222B3DC2006DBFF0 /* PastelLabel.swift */,
+				EBCF9E22222B3DF3006DBFF0 /* PastelPoint.swift */,
+				EBCF9E24222B3E22006DBFF0 /* PastelView.swift */,
 			);
 			path = "medication-reminder";
 			sourceTree = "<group>";
@@ -147,13 +162,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCF9E23222B3DF3006DBFF0 /* PastelPoint.swift in Sources */,
+				EBCF9E1D222B23CC006DBFF0 /* Medication.swift in Sources */,
 				EBCF9E1B222AFD91006DBFF0 /* MedicationRecord.swift in Sources */,
 				17F82FEF222A3D0000F44244 /* ViewController.swift in Sources */,
+				EBCF9E21222B3DC2006DBFF0 /* PastelLabel.swift in Sources */,
 				EBCF9E13222AA770006DBFF0 /* MedicationTableCell.swift in Sources */,
-				EBCF9E17222ACB3C006DBFF0 /* MockMedications.swift in Sources */,
+				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
 				1768E34D222AD66500979362 /* TableViewController.swift in Sources */,
 				EBCF9E17222ACB3C006DBFF0 /* Medications.swift in Sources */,
 				17F82FED222A3D0000F44244 /* AppDelegate.swift in Sources */,
+				EBCF9E1F222B3D60006DBFF0 /* PastelGradient.swift in Sources */,
+				EBCF9E25222B3E22006DBFF0 /* PastelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
